@@ -35,5 +35,5 @@
 
 	<instructions type="update" fromversion="0.0.9">
         <files>files.tar</files>
-	</instructions>
+	</instructions
 </package>

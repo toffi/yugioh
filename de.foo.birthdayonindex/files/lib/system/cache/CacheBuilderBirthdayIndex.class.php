@@ -1,5 +1,5 @@
 <?PHP
-// wcf imports
+
 require_once(WCF_DIR.'lib/system/cache/CacheBuilder.class.php');
 require_once(WCF_DIR.'lib/data/user/User.class.php');
 

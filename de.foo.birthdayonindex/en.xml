@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="en">
+	<category name="wbb.index">
+	    <item name="wbb.index.geburtstagindex"><![CDATA[Geburtstage:]]></item>
+		<item name="wbb.index.geburtstagindex.description"><![CDATA[The following members are celebrating their birthday today]]></item>
+     </category>
+	 <category name="wcf.acp.option">
+	 	<item name="wcf.acp.option.geburtstagindex_enable"><![CDATA[View Birthdays]]></item>
+		<item name="wcf.acp.option.geburtstagindex_enable.description"><![CDATA[If the Birthdays are displayed?]]></item>
+	</category>	
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.user.board.canViewGeburtstagIndex"><![CDATA[Can see birthdays on the home page]]></item>
+		<item name="wcf.acp.group.option.user.board.canViewGeburtstagIndex.description"><![CDATA[Members of these groups can see Birthdays on the home page.]]></item>
+	</category>
+</language>

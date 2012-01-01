@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/cronjobs.xsd">
+	<import>
+		<cronjob>
+			<classPath>lib/system/cronjob/PremiumGroupMembershipCronjob.class.php</classPath>
+			<description><![CDATA[Delete user out of the premium usergroups.]]></description>
+			<startminute>*</startminute>
+			<starthour>0</starthour>
+			<startdom>*</startdom>
+			<startmonth>*</startmonth>
+			<startdow>*</startdow>
+			<execmultiple>0</execmultiple>
+			<canbeedited>1</canbeedited>
+			<canbedisabled>1</canbedisabled>
+		</cronjob>
+	</import>
+</data>

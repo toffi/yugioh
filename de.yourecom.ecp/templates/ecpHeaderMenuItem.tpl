@@ -1,0 +1,1 @@
+<li><a href="index.php?form=EcpAdminButtonEdit{@SID_ARG_2ND}"><img src="{RELATIVE_WBB_DIR}icon/ecpS.png" alt="" /><span>{lang}wcf.ecp.title.short{/lang}</span></a></li>

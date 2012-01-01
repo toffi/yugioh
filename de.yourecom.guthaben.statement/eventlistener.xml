@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE import SYSTEM "DTD/import.dtd">
+<data>	
+	<import>
+		<eventlistener>
+			<eventclassname>UserAddForm</eventclassname>
+			<eventname>assignVariables</eventname>
+			<listenerclassfile>lib/system/event/listener/GuthabenStatementListener.class.php</listenerclassfile>
+			<environment>admin</environment>
+			<inherit>1</inherit>
+		</eventlistener>
+	</import>
+</data>

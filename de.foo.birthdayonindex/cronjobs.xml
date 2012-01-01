@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE data SYSTEM "http://www.woltlab.com/DTDs/cronjobs.dtd">
+<data>
+	<import>
+		<cronjob>
+			<classPath>lib/system/cronjob/IndexPageBirthdayResetCacheCronjob.class.php</classPath>
+			<description><![CDATA[Reset the birthdays in the home page]]></description>
+			<startminute>*</startminute>
+			<starthour>0</starthour>
+			<startdom>*</startdom>
+			<startmonth>*</startmonth>
+			<startdow>*</startdow>
+			<execmultiple>0</execmultiple>
+			<canbeedited>1</canbeedited>
+			<canbedisabled>1</canbedisabled>
+		</cronjob>
+	</import>
+</data>

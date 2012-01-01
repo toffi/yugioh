@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<package name="de.yourecom.ecp" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/package.xsd">
+	<packageinformation>
+		<packagename><![CDATA[Event Control Panel]]></packagename>
+		<packagedescription><![CDATA[Installiert das Event Control Panel]]></packagedescription>
+		<isunique>1</isunique>
+		<version>1.0.4.10</version>
+		<date>2011-12-03</date>
+		<plugin>com.woltlab.wbb</plugin>
+	</packageinformation>
+
+	<authorinformation>
+		<author>Marcel Beckers, YoureCom</author>
+		<authorurl><![CDATA[http://yourecom.de]]></authorurl>
+	</authorinformation>
+
+	<requiredpackages>
+		<requiredpackage minversion="3.1.0">com.woltlab.wbb</requiredpackage>
+		<requiredpackage minversion="1.0.0">com.woltlab.community.boardselect</requiredpackage>
+		<requiredpackage minversion="1.0.1" file="requirements/com.woltlab.community.htmlutility.tar.gz">com.woltlab.community.htmlutility</requiredpackage>
+	</requiredpackages>
+
+	<instructions type="install">
+        <eventlistener>eventlistener.xml</eventlistener>
+		<groupoptions>groupoptions.xml</groupoptions>
+		<pagemenu>pagemenu.xml</pagemenu>
+		<options>options.xml</options>
+		<files>files/files.tar</files>
+		<pagelocation>pagelocation.xml</pagelocation>
+		<templates>templates/templates.tar</templates>
+		<languages languagecode="de">languages/de.xml</languages>
+		<languages languagecode="de-informal">languages/de-informal.xml</languages>
+		<languages languagecode="en">languages/en.xml</languages>
+	</instructions>
+
+	<instructions type="update" fromversion="1.0.4.9">
+		<languages languagecode="de">languages/de.xml</languages>
+	</instructions>
+</package>

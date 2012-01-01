@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/options.xsd">
+	<import>
+		<categories>
+			<category name="ecp">
+			</category>
+
+			<category name="ecp.general">
+				<parent>ecp</parent>
+				<showorder>1</showorder>
+			</category>
+			<category name="ecp.matchplaner">
+				<parent>ecp</parent>
+				<showorder>2</showorder>
+			</category>
+			<category name="ecp.news">
+				<parent>ecp</parent>
+				<showorder>3</showorder>
+			</category>
+			<category name="ecp.points">
+				<parent>ecp</parent>
+				<showorder>4</showorder>
+			</category>
+		</categories>
+		<options>
+			<option name="ecp_enable">
+				<categoryname>ecp.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<showorder>1</showorder>
+			</option>
+			<option name="ecp_message">
+				<categoryname>ecp.general</categoryname>
+				<optiontype>textarea</optiontype>
+				<showorder>2</showorder>
+			</option>
+
+			<option name="ecp_matchplaner_ofl_text">
+				<categoryname>ecp.matchplaner</categoryname>
+				<optiontype>textarea</optiontype>
+				<defaultvalue><![CDATA[Viel Erfolg für euer Spiel!
+Eure Liga-Leitung]]></defaultvalue>
+				<showorder>1</showorder>
+			</option>
+
+			<option name="ecp_newsbox_enable">
+				<categoryname>ecp.news</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue><![CDATA[0]]></defaultvalue>
+				<showorder>1</showorder>
+                <enableoptions>ecp_newsbox_boardid,ecp_newsboxecp_length</enableoptions>
+			</option>
+			<option name="ecp_newsbox_boardid">
+				<categoryname>ecp.news</categoryname>
+				<optiontype>boardselect</optiontype>
+				<defaultvalue><![CDATA[]]></defaultvalue>
+				<showorder>2</showorder>
+			</option>
+			<option name="ecp_newsbox_length">
+				<categoryname>ecp.news</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue><![CDATA[150]]></defaultvalue>
+				<showorder>3</showorder>
+			</option>
+
+			<option name="points_win">
+				<categoryname>ecp.points</categoryname>
+				<optiontype>integer</optiontype>
+				<showorder>1</showorder>
+			</option>
+			<option name="points_draw">
+				<categoryname>ecp.points</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue><![CDATA[2]]></defaultvalue>
+				<showorder>1</showorder>
+			</option>
+			<option name="points_loose">
+				<categoryname>ecp.points</categoryname>
+				<optiontype>integer</optiontype>
+				<showorder>3</showorder>
+			</option>
+            
+		</options>
+	</import>
+</data>

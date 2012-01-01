@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/groupoptions.xsd">
+	<import>
+		<categories>
+
+			<category name="mod.ecp">
+				<parent>mod</parent>
+			</category>
+
+			<category name="user.ecp">
+				<parent>user</parent>
+			</category>
+		</categories>
+		<options>
+			<option name="mod.ecp.canSeeECP">
+				<categoryname>mod.ecp</categoryname>
+				<optiontype>boolean</optiontype>
+				<showorder>1</showorder>
+			</option>
+			<option name="mod.ecp.canCreateTourney">
+				<categoryname>mod.ecp</categoryname>
+				<optiontype>boolean</optiontype>
+				<showorder>2</showorder>
+			</option>
+			<option name="mod.ecp.canEditEveryResult">
+				<categoryname>mod.ecp</categoryname>
+				<optiontype>boolean</optiontype>
+				<showorder>3</showorder>
+			</option>
+			<option name="mod.ecp.canDelEveryTourney">
+				<categoryname>mod.ecp</categoryname>
+				<optiontype>boolean</optiontype>
+				<showorder>4</showorder>
+			</option>
+			<option name="mod.ecp.canMakeOfficial">
+				<categoryname>mod.ecp</categoryname>
+				<optiontype>boolean</optiontype>
+				<showorder>5</showorder>
+			</option>
+
+			<option name="user.ecp.canJoinTourney">
+				<categoryname>user.ecp</categoryname>
+				<optiontype>boolean</optiontype>
+				<showorder>1</showorder>
+			</option>
+		</options>
+	</import>
+</data>

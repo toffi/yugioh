@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de-informal">
+	<category name="wcf.guthaben.statement">
+		<item name="wcf.guthaben.statement"><![CDATA[Kontoauszüge]]></item>
+        <item name="wcf.guthaben.statement.delete"><![CDATA[Buchung löschen]]></item>
+        <item name="wcf.guthaben.statement.delete.sure"><![CDATA[Bist du sicher, dass du diese Buchung löschen möchtest?]]></item>
+        <item name="wcf.guthaben.statement.remove"><![CDATA[Buchung zurücksetzen]]></item>
+        <item name="wcf.guthaben.statement.remove.sure"><![CDATA[Bist du sicher, dass du diese Buchung zurücksetzen möchtest?]]></item>
+        <item name="wcf.guthaben.statement.remove.text"><![CDATA[Stornierung der Buchungsnummer]]></item>
+    </category>
+</language>

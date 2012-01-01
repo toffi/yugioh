@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="de.yourecom.guthaben.premium" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/package.xsd">
+	<packageinformation>
+		<packagename><![CDATA[Guthaben: Premium Benutzergruppen]]></packagename>
+		<packagedescription><![CDATA[Durch dieses Plugin können Benutzergruppen verkauft werden.]]></packagedescription>
+		<standalone>0</standalone>
+		<isunique>1</isunique>
+		<version>1.0.0</version>
+		<date>2011-12-16</date>
+		<plugin>com.woltlab.wcf</plugin>
+		<packageurl><![CDATA[http://yourecom.de]]></packageurl>
+	</packageinformation>
+
+	<authorinformation>
+		<author>Marcel Beckers, YoureCom</author>
+		<authorurl><![CDATA[http://yourecom.de]]></authorurl>
+	</authorinformation>
+
+	<requiredPackages>
+		<requiredPackage minversion="0.8.6">com.toby.wcf.guthaben</requiredPackage>
+	</requiredPackages>
+
+	<instructions type="install">
+        <options>options.xml</options>
+        <languages languagecode="de">de.xml</languages>
+        <languages languagecode="de-informal">de-informal.xml</languages>
+		<guthabenmainpage>guthabenmainpage.xml</guthabenmainpage>
+        <eventlistener>eventlistener.xml</eventlistener>
+        <files>files.tar</files>
+        <templates>templates.tar</templates>
+        <sql>install.sql</sql>
+        <acptemplates>acptemplates.tar</acptemplates>
+        <cronjobs>cronjobs.xml</cronjobs>
+	</instructions>
+
+	<instructions type="update" fromversion="0.0.9">
+        <files>files.tar</files>
+	</instructions>
+</package>

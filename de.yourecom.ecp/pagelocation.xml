@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/pagelocation.xsd">
+	<import>
+		<pagelocation name="wbb.usersOnline.location.ecp.beendet">
+			<pattern><![CDATA[index\.php\?page=ECPBeendetl]]></pattern>
+		</pagelocation>
+		<pagelocation name="wbb.usersOnline.location.ecp.haupt">
+			<pattern><![CDATA[index\.php\?form=ECPNews]]></pattern>
+		</pagelocation>
+		<pagelocation name="wbb.usersOnline.location.ecp.tourney.abbort">
+			<pattern><![CDATA[index\.php\?page=EcpAbbortTourney]]></pattern>
+		</pagelocation>
+		<pagelocation name="wbb.usersOnline.location.ecp.tourney.edit">
+			<pattern><![CDATA[index\.php\?form=EcpEditTourney&.*eventID=(\d+)]]></pattern>
+			<classpath>lib/data/page/location/ECPLocation.class.php</classpath>
+		</pagelocation>
+		<pagelocation name="wbb.usersOnline.location.ecp.tourney.overview">
+			<pattern><![CDATA[index\.php\?page=ECPTourney]]></pattern>
+		</pagelocation>
+		<pagelocation name="wbb.usersOnline.location.ecp.tourney.ranking">
+			<pattern><![CDATA[index\.php\?page=ECPTourneyRanking]]></pattern>
+		</pagelocation>
+		<pagelocation name="wbb.usersOnline.location.ecp.tourney.ranking.bf">
+			<pattern><![CDATA[index\.php\?page=ECPTourneyRankingBF]]></pattern>
+		</pagelocation>
+		<pagelocation name="wbb.usersOnline.location.ecp.tourney.ranking.mnw">
+			<pattern><![CDATA[index\.php\?page=ECPTourneyRankingMNW]]></pattern>
+		</pagelocation>
+		<pagelocation name="wbb.usersOnline.location.ecp.tourney.ranking.wdft">
+			<pattern><![CDATA[index\.php\?page=ECPTourneyRankingWDFT]]></pattern>
+		</pagelocation>
+		<pagelocation name="wbb.usersOnline.location.ecp.tourney.see">
+			<pattern><![CDATA[index\.php\?form=ECPTourneyDetail&.*eventID=(\d+)]]></pattern>
+			<classpath>lib/data/page/location/ECPLocation.class.php</classpath>
+		</pagelocation>
+	</import>
+</data>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/options.xsd">
+	<import>
+		<options>
+			<option name="guthaben_pay_per_changename">
+				<categoryname>guthaben.spend</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>-200</defaultvalue>
+			</option>
+
+			<option name="guthaben_pay_per_changenameflat">
+				<categoryname>guthaben.spend</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>-1000</defaultvalue>
+			</option>
+		</options>
+	</import>
+</data>

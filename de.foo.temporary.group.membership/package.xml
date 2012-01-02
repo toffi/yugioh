@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="de.foo.temporary.group.membership" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/package.xsd">
+	<packageinformation>
+		<packagename><![CDATA[Zeitlich begrenzte Mitgliedschaft in einer Benutzergruppe]]></packagename>
+		<packagedescription><![CDATA[Mit diesem Plugin kann die Mitgliedschaft in einer Benutzergruppe zeitlich begrenzt werden.]]></packagedescription>
+		<standalone>0</standalone>
+		<isunique>1</isunique>
+		<version>1.0.0</version>
+		<date>2010-05-30</date>
+		<plugin>com.woltlab.wcf.form.user.group</plugin>
+		<packageurl><![CDATA[http://gnex.org]]></packageurl>
+	</packageinformation>
+
+	<authorInformation>
+		<author>$foo, GneX</author>
+		<authorurl><![CDATA[http://gnex.org]]></authorurl>
+	</authorInformation>
+
+	<requiredpackages>
+		<requiredpackage minversion="1.1.1">com.woltlab.wcf.form.user.group</requiredpackage>
+	</requiredpackages>
+
+	<instructions type="install">
+		<languages languagecode="de">languages/de.xml</languages>
+		<languages languagecode="de-informal">languages/de-informal.xml</languages>
+		<files>files.tar</files>
+		<eventlistener>eventlistener.xml</eventlistener>
+		<sql>install.sql</sql>
+		<cronjobs>cronjobs.xml</cronjobs>
+		<acptemplates>acptemplates.tar</acptemplates>
+	</instructions>
+</package>

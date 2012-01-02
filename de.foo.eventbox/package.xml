@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="de.foo.eventbox" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/package.xsd">
+	<packageinformation>
+		<packagename><![CDATA[Event Box]]></packagename>
+		<packagedescription><![CDATA[Installiert die Infobox für Events]]></packagedescription>
+		<standalone>0</standalone>
+		<isunique>1</isunique>
+		<version>1.0.3</version>
+		<date>2010-11-29</date>
+		<plugin>com.woltlab.wcf</plugin>
+		<packageurl><![CDATA[http://technex.org]]></packageurl>
+	</packageinformation>
+	
+	<authorInformation>
+		<author><![CDATA[$foo, techNex]]></author>
+		<authorurl><![CDATA[http://technex.org]]></authorurl>
+	</authorInformation>
+
+	<requiredpackages>
+		<requiredpackage minversion="3.1.0">com.woltlab.wbb</requiredpackage>
+	</requiredpackages>
+
+	<instructions type="install">
+		<templates>templates/templates.tar</templates>
+		<eventlistener>eventlistener.xml</eventlistener>
+		<languages languagecode="de">de.xml</languages>
+		<languages languagecode="de-informal">de-informal.xml</languages>
+		<languages languagecode="en">en.xml</languages>
+		<files>files/files.tar</files>
+		<groupoptions>groupoptions.xml</groupoptions>
+		<options>options.xml</options>
+		<pagelocation>pagelocation.xml</pagelocation>
+	</instructions>
+
+	<instructions type="update" fromversion="1.*">
+		<templates>templates.tar</templates>
+		<eventlistener>eventlistener.xml</eventlistener>
+		<languages languagecode="de">de.xml</languages>
+		<languages languagecode="de-informal">de-informal.xml</languages>
+		<languages languagecode="en">en.xml</languages>
+		<files>files.tar</files>
+		<groupoptions>groupoptions.xml</groupoptions>
+		<options>options.xml</options>
+		<pagelocation>pagelocation.xml</pagelocation>
+	</instructions>
+</package>

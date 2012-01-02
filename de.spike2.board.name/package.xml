@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<package name="de.spike2.board.name" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/package.xsd">
+	<packageinformation>
+		<packagename><![CDATA[Forennamen]]></packagename>
+		<packagedescription><![CDATA[Durch dieses Plugin werden Sprachvariabeln für die Foren angelegt]]></packagedescription>
+		<standalone>0</standalone>
+		<isunique>1</isunique>
+		<version>1.0.15</version>
+		<date>2011-01-16</date>
+		<plugin>com.woltlab.wbb</plugin>
+		<packageurl><![CDATA[http://technex.org]]></packageurl>
+	</packageinformation>
+	
+	<authorInformation>
+		<author><![CDATA[$foo, techNex]]></author>
+		<authorurl><![CDATA[http://technex.org]]></authorurl>
+	</authorInformation>
+	
+	<requiredpackages>
+		<requiredpackage minversion="3.1.2">com.woltlab.wbb</requiredpackage>
+	</requiredpackages>
+	
+	<instructions type="install">
+		<languages languagecode="de">de.xml</languages>
+		<languages languagecode="de-informal">de-informal.xml</languages>
+		<languages languagecode="en">en.xml</languages>
+	</instructions>
+
+	<instructions type="update" fromversion="1.0.14">
+		<languages languagecode="de">de.xml</languages>
+		<languages languagecode="de-informal">de-informal.xml</languages>
+		<languages languagecode="en">en.xml</languages>
+	</instructions>
+</package>

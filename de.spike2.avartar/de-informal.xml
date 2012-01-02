@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language languagecode="de-informal" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.guthaben_pay_per_avatar_enable"><![CDATA[Avatarkauf aktivieren]]></item>
+		<item name="wcf.acp.option.guthaben_pay_per_avatar_enable.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.guthaben_pay_per_avatar"><![CDATA[Kosten zum Ändern des Avatars]]></item>
+		<item name="wcf.acp.option.guthaben_pay_per_avatar.description"><![CDATA[Dieser Betrag wird jedem User abgezogen, wenn er seinen Avatar ändert. Hat er nicht genug Guthaben, so kann er sein Avatar auch nicht ändern!]]></item>
+		<item name="wcf.acp.option.guthaben_pay_per_avatarflat_enable"><![CDATA[Avatarflat aktivieren]]></item>
+		<item name="wcf.acp.option.guthaben_pay_per_avatarflat_enable.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.guthaben_pay_per_avatarflat"><![CDATA[Kosten für die Flatrate für den Avatarkauf]]></item>
+		<item name="wcf.acp.option.guthaben_pay_per_avatarflat.description"><![CDATA[Dieser Betrag wird jedem User abgezogen, wenn er sich eine Flatrate für den Avatarkauf kauft. Hat er nicht genug Guthaben, so kann er die Flatrate auch nicht kaufen!]]></item>
+	</category>
+
+	<category name="wcf.guthaben.prices">
+		<item name="wcf.guthaben.prices.avatar"><![CDATA[Preis pro Avatar Änderung]]></item>
+		<item name="wcf.guthaben.prices.avatar.desc"><![CDATA[Diesen Preis musst du bezahlen, um dein Avatar zu ändern.]]></item>
+		<item name="wcf.guthaben.prices.avatarflat"><![CDATA[Preis für eine Avatar-Flatrate]]></item>
+		<item name="wcf.guthaben.prices.avatarflat.desc"><![CDATA[Diesen Preis musst du bezahlen, um sich eine Flatrate für den Avatarkauf zu kaufen.]]></item>
+	</category>
+
+	<category name="wcf.guthaben.log">
+		<item name="wcf.guthaben.log.avatar"><![CDATA[Du hast ein Avatar gekauft]]></item>
+		<item name="wcf.guthaben.log.avatarflat"><![CDATA[Du hast eine Avatar-Flatrate gekauft]]></item>
+		<item name="wcf.guthaben.log.avatar.nomoney"><![CDATA[Du hast nicht genug {$currency} um dein Avatar zu ändern.]]></item>
+		<item name="wcf.guthaben.log.avatarflat.nomoney"><![CDATA[Du hast nicht genug {$currency} um dir eine Flatrate für den Avatarkauf zuzulegen.]]></item>
+		<item name="wcf.guthaben.log.avatarflat.alreadyexist"><![CDATA[Du kannst dir keine zweite Flatrate für den Avatarkauf zulegen.]]></item>
+	</category>
+
+	<category name="wcf.guthaben.mainpage">
+		<item name="wcf.guthaben.mainpage.avatar"><![CDATA[Avatarkauf]]></item>
+		<item name="wcf.guthaben.mainpage.avatar.description"><![CDATA[Hier kannst du ein neues Avatar kaufen.]]></item>
+		<item name="wcf.guthaben.mainpage.avatarflat"><![CDATA[Avatar Flatrate]]></item>
+		<item name="wcf.guthaben.mainpage.avatarflat.description"><![CDATA[Hier kannst du dir eine Flatrate zum Avatarkauf kaufen.]]></item>
+	</category>
+
+	<category name="wcf.user.avatar">
+		<item name="wcf.user.avatar.guthabenInfo"><![CDATA[{if GUTHABEN_PAY_PER_AVATAR != 0}Ein Avatarkauf kostet {GUTHABEN_PAY_PER_AVATAR} {lang}wcf.guthaben.currency{/lang}.{/if}{if GUTHABEN_PAY_PER_AVATAR != 0 && GUTHABEN_PAY_PER_AVATARFLAT != 0}<br />{/if}{if GUTHABEN_PAY_PER_AVATARFLAT != 0} Kaufen Sie sich jetzt ihre Flatrate zum Avatarkauf für {#GUTHABEN_PAY_PER_AVATARFLAT} {lang}wcf.guthaben.currency{/lang} <a href="index.php?page=guthabenMain&amp;action=shopPage{@SID_ARG_2ND}" title="Zum Shop">Zum Shop</a>{/if}]]></item>
+	</category>
+
+	<category name="wcf.user.option">
+		<item name="wcf.user.option.category.settings.currency"><![CDATA[Guthaben Flatrates]]></item>
+		<item name="wcf.user.option.avatarFlat"><![CDATA[Avatar-Flatrate]]></item>
+		<item name="wcf.user.option.avatarFlat.description"><![CDATA[Hat dieser User eine Avatar-Flatrate für den Avatarkauf?]]></item>
+	</category>
+
+	<category name="wcf.user.avatar">
+		<item name="wcf.user.avatar.avatarUpload.description"><![CDATA[Eigene Avatare dürfen die Dateiendungen gif, jpg, jpeg und png und maximal eine Größe von {#$this->user->getPermission('user.profile.avatar.maxWidth')}*{#$this->user->getPermission('user.profile.avatar.maxHeight')} Pixel und {@$this->user->getPermission('user.profile.avatar.maxSize')|filesize} besitzen. Größere Avatare werden automatisch auf die Maximalgröße verkleinert.{if $this->user->avatarFlat != 1}<br /><br />{if GUTHABEN_PAY_PER_AVATAR != 0}Ein Avatarkauf kostet {GUTHABEN_PAY_PER_AVATAR} {lang}wcf.guthaben.currency{/lang}.{/if}{if GUTHABEN_PAY_PER_AVATAR != 0 && GUTHABEN_PAY_PER_AVATARFLAT != 0}<br />{/if}{if GUTHABEN_PAY_PER_AVATARFLAT != 0} Kaufen Sie sich jetzt ihre Flatrate zum Avatarkauf für {#GUTHABEN_PAY_PER_AVATARFLAT} {lang}wcf.guthaben.currency{/lang} <a href="index.php?page=guthabenMain&amp;action=shopPage{@SID_ARG_2ND}" title="Zum Shop">Zum Shop</a>{/if}{/if}]]></item>
+	</category>
+</language>

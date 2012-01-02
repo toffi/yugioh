@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/usercpmenu.xsd">
+	<import>
+		<usercpmenuitem name="wcf.user.usercp.menu.link.clique">
+			<icon>cliqueM.png</icon>
+			<link>index.php?page=Clique</link>
+			<options></options>
+			<permissions>user.clique.general.canSee</permissions>
+		</usercpmenuitem>
+
+		<usercpmenuitem name="wcf.user.usercp.menu.link.clique.overview">
+			<link>index.php?page=Clique</link>
+			<parent>wcf.user.usercp.menu.link.clique</parent>
+			<permissions>user.clique.general.canSee</permissions>
+		</usercpmenuitem>
+
+		<usercpmenuitem name="wcf.user.usercp.menu.link.clique.raiser">
+			<link>index.php?page=CliqueRaiser</link>
+			<parent>wcf.user.usercp.menu.link.clique</parent>
+			<permissions>user.clique.general.canRaise</permissions>
+		</usercpmenuitem>
+	</import>
+</data>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de-informal">
+	<category name="wcf.user.usertitle">
+		<item name="wcf.user.usertitle.guthabenInfo"><![CDATA[{if GUTHABEN_PAY_PER_USERTITLE != 0}Ein Benutzertittelkauf kostet {GUTHABEN_PAY_PER_USERTITLE} {lang}wcf.guthaben.currency{/lang}.{/if}{if GUTHABEN_PAY_PER_USERTITLE != 0 && GUTHABEN_PAY_PER_USERTITLEFLAT != 0}<br />{/if}{if GUTHABEN_PAY_PER_USERTITLEFLAT != 0} Kauf dir sich jetzt ihre Flatrate zur Benutzertitteländerung für {#GUTHABEN_PAY_PER_USERTITLEFLAT} {lang}wcf.guthaben.currency{/lang} <a href="index.php?page=guthabenMain&amp;action=shopPage{@SID_ARG_2ND}" title="Zum Shop">Zum Shop</a>{/if}]]></item>
+	</category>
+</language>

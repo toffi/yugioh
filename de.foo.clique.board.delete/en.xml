@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="eng">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.clique_board_deleteThreads"><![CDATA[Enable clan forum deletion]]></item>
+		<item name="wcf.acp.option.clique_board_deleteThreads.description"><![CDATA[When a clan gets deleted, all clan forums are deleted automatically.]]></item>
+		<item name="wcf.acp.option.clique_board_moveThreads"><![CDATA[Archive]]></item>
+		<item name="wcf.acp.option.clique_board_moveThreads.description"><![CDATA[Please enter the ID of the forum where the topics of a deleted clan get moved to. This way you disable the automatic deletion of the topics.]]></item>
+	</category>
+</language>

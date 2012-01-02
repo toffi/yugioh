@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="eng">
+	<category name="wbb.board.name">
+		<item name="wbb.board.name.clique.board"><![CDATA[Forum]]></item>
+		<item name="wbb.board.name.clique"><![CDATA[Clans]]></item>
+		<item name="wbb.board.name.clique.description"><![CDATA[All clan forums get listed here]]></item>
+		<item name="wbb.board.name.clique.once"><![CDATA[Clan forum of the clan]]></item>
+		<item name="wbb.board.name.clique.once.description"><![CDATA[This is the official clan forum of the clan]></item>
+		<item name="wbb.board.name.clique.board"><![CDATA[Clan forum]]></item>
+		<item name="wbb.board.name.clique.board.noThreads"><![CDATA[There is no topic in this forum.]]></item>
+	</category>
+
+	<category name="wbb.clique.board">
+	</category>
+
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.clique_board_categorie"><![CDATA[Parent forums ID]]></item>
+		<item name="wcf.acp.option.clique_board_categorie.description"><![CDATA[Here you can set the forum, under which new clan forums get created.]]></item>
+		<item name="wcf.acp.option.clique_board_invisible"><![CDATA[Invisible forums]]></item>
+		<item name="wcf.acp.option.clique_board_invisible.description"><![CDATA[New forums are displayed invisible automatically for every user.]]></item>
+		<item name="wcf.acp.option.clique_threads_per_detail_page"><![CDATA[Total amount of the latest clan threads]]></item>
+		<item name="wcf.acp.option.clique_threads_per_detail_page.description"><![CDATA[Here you can set, how many of the latest threads get displayed on the detail site of a clan.]]></item>
+		<item name="wcf.acp.option.clique_threads_character_number"><![CDATA[Character limit of the latest posts on the detail site]]></item>
+		<item name="wcf.acp.option.clique_threads_character_number.description"><![CDATA[Here you can set, at which amount of characters a post gets chopped on the detail site.]]></item>
+	</category>
+
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.mod.clique.general.cannSeeAllBoards"><![CDATA[Can enter every clan forum]]></item>
+		<item name="wcf.acp.group.option.mod.clique.general.cannSeeAllBoards.description"><![CDATA[Members of this user group can enter every clan forum.]]></item>
+		<item name="wcf.acp.group.option.mod.clique.general.cannEditPostsAllBoards"><![CDATA[Can edit posts in every clan forum]]></item>
+		<item name="wcf.acp.group.option.mod.clique.general.cannEditPostsAllBoards.description"><![CDATA[Members of this user group can edit posts in every clan forum.]]></item>
+		<item name="wcf.acp.group.option.mod.clique.general.cannStartPostsAllBoards"><![CDATA[Can create posts in every clan forum]]></item>
+		<item name="wcf.acp.group.option.mod.clique.general.cannStartPostsAllBoards.description"><![CDATA[Members of this user group can create posts in every clan forum.]]></item>
+	</category>
+
+	<category name="wcf.clique.permission">
+		<item name="wcf.clique.permission.canSeeBoards"><![CDATA[Can see the clan forum]]></item>
+		<item name="wcf.clique.permission.canMakePosts"><![CDATA[Can create topics/posts in the clan forum]]></item>
+	</category>
+
+	<category name="wbb.acp.board">
+		<item name="wbb.acp.board.cliquBoard"><![CDATA[This forum is a clan forum]]></item>
+		<item name="wbb.acp.board.cliquBoard.description"><![CDATA[Please notice that this forum gets saved in the category of the clans automatically.]]></item>
+		<item name="wbb.acp.board.cliqueID"><![CDATA[Clan ID]]></item>
+		<item name="wbb.acp.board.cliqueID.description"><![CDATA[Please enter the ID of the clan where this forum will be created. Example: index.php?page=CliqueDetail&<strong>clanID=25</strong>]]></item>
+	</category>
+
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.clique_general_rights_canSeeBoards"><![CDATA[Can see the clan forum]]></item>
+		<item name="wcf.acp.option.clique_general_rights_canSeeBoards.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.clique_general_rights_canMakePosts"><![CDATA[Can create topics/posts in the clan forum]]></item>
+		<item name="wcf.acp.option.clique_general_rights_canMakePosts.description"><![CDATA[]]></item>
+	</category>
+
+	<category name="wcf.clique.administrate">
+		<item name="wcf.clique.administrate.functions.boardEnable"><![CDATA[Enable clan board]]></item>
+	</category>
+</language>

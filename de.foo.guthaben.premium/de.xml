@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.guthaben_enable_premium"><![CDATA[Premium Benutzergruppen aktivieren]]></item>
+        <item name="wcf.acp.option.guthaben_enable_premium.description"><![CDATA[]]></item>
+        <item name="wcf.acp.option.category.guthaben.premium"><![CDATA[Premium Benutzergruppen]]></item>
+        <item name="wcf.acp.option.category.guthaben.premium.description"><![CDATA[]]></item>
+        <item name="wcf.acp.option.guthaben_premium_years"><![CDATA[Jahre]]></item>
+        <item name="wcf.acp.option.guthaben_premium_years.description"><![CDATA[Geben Sie hier die höchste Anzahl an Jahren an, für die eine Premium Benutzergruppe verkauft werden kann.]]></item>
+    </category>
+
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.premium"><![CDATA[Premium Benutzergruppen]]></item>
+        <item name="wcf.acp.group.groupDescription"><![CDATA[Beschreibungstext]]></item>
+        <item name="wcf.acp.group.groupDescription.description"><![CDATA[Geben Sie hier einen Beschreibungstext an, der auf der Verkaufsseite angezeigt werden soll.]]></item>
+        <item name="wcf.acp.group.groupYears"><![CDATA[Kosten für {$year} {if $year == 1}Jahr{else}Jahre{/if}]]></item>
+        <item name="wcf.acp.group.groupYears.description"><![CDATA[Geben Sie hier den Betrag ein, den der Benutzer für eine Laufzeit von {$year} {if $year == 1}Jahr{else}Jahre{/if} bezahlen muss.]]></item>
+    </category>
+  
+	<category name="wcf.guthaben.premium">
+		<item name="wcf.guthaben.premium"><![CDATA[Premium Benutzergruppen]]></item>
+        <item name="wcf.guthaben.premium.title"><![CDATA[Premium Benutzergruppen]]></item>
+        <item name="wcf.guthaben.premium.status"><![CDATA[Ihr jetziger Premium Status: <strong>{if $isMember == 1}<span style="color:green">Aktiv</span>{else}<span style="color:red">Inaktiv</span>{/if}</strong>]]></item>
+        <item name="wcf.guthaben.premium.exclusive"><![CDATA[Premium Exclusive Features]]></item>
+        <item name="wcf.guthaben.premium.price"><![CDATA[Preis]]></item>
+        <item name="wcf.guthaben.premium.notBuy"><![CDATA[Nicht {if $isMember == 1}verlängern{else}kaufen{/if}]]></item>
+        <item name="wcf.guthaben.premium.buy"><![CDATA[{if $isMember == 1}um {$years+1} {if $years+1 == 1}Jahr{else}Jahre{/if} verlängeren{else}für {$years+1} {if $years+1 == 1}Jahr{else}Jahre{/if} kaufen{/if}]]></item>
+        <item name="wcf.guthaben.premium.runtime"><![CDATA[Premium Laufzeit]]></item>
+        <item name="wcf.guthaben.premium.deactivatet"><![CDATA[Die Premium Benutzerkonten sind zur Zeit deaktiviert.]]></item>
+        <item name="wcf.guthaben.premium.noPremiumChoose"><![CDATA[Es wurde keine Premium Benutzergruppe ausgewählt.]]></item>
+        <item name="wcf.guthaben.premium.notEnoughMoney"><![CDATA[Sie besitzen nicht genügend Guthaben, um die Bestellung auszuführen!]]></item>
+        <item name="wcf.guthaben.premium.boughtPlural"><![CDATA[Kauf der Premium Benutzergruppen:]]></item>
+        <item name="wcf.guthaben.premium.boughtSingular"><![CDATA[Kauf der Premium Benutzergruppe:]]></item>
+        <item name="wcf.guthaben.premium.succes"><![CDATA[Sie haben sich erfolgreich die Premium Benutzergruppen: {$textGroups} gekauft.]]></item>
+    </category>
+</language>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.guthaben_earn_per_galerie_upload"><![CDATA[Guthaben pro Galerieupload]]></item>
+		<item name="wcf.acp.option.guthaben_earn_per_galerie_upload.description"><![CDATA[Jedem User wird diese Summe pro Galerieupload gutgeschrieben.]]></item>
+	</category>
+	<category name="wcf.guthaben.prices">
+		<item name="wcf.guthaben.prices.galerieUpload"><![CDATA[Gutschrift pro Galerieupload]]></item>
+		<item name="wcf.guthaben.prices.galerieUpload.description"><![CDATA[Dieser Betrag wird jedem User beim Upload eines Galeriebildes gutgeschrieben.]]></item>
+	</category>
+	<category name="wcf.guthaben.log">
+		<item name="wcf.guthaben.log.galerieUpload.singulary"><![CDATA[Sie haben {$countPictures} Galeriebild hochgeladen]]></item>
+		<item name="wcf.guthaben.log.galerieUpload.plural"><![CDATA[Sie haben {$countPictures} Galeriebilder hochgeladen]]></item>
+	</category>
+</language>

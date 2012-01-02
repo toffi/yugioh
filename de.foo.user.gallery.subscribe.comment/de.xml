@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de">
+	<category name="wcf.user.notification">
+		<item name="wcf.user.notification.object.type.UserGalleryComment"><![CDATA[Galerie-Kommentare]]></item>
+	</category>
+	<category name="wcf.user.gallery">
+		<item name="wcf.user.gallery.notification.galleryComment"><![CDATA[Sie haben einen neuen <a href="{@$event->getObject()->getURL()}{@SID_ARG_2ND}">Kommentar</a>{if $event->getObject()->userID} von <a href="index.php?page=User&amp;userID={@$event->getObject()->userID}{@SID_ARG_2ND}">{$event->getObject()->username}</a>{/if} zu einem Ihrer abonnierten Bilder erhalten.]]></item>
+		<item name="wcf.user.gallery.notification.galleryComment.accept"><![CDATA[Bestätigen]]></item>
+		<item name="wcf.user.gallery.notification.galleryComment.title"><![CDATA[Neuer Kommentar]]></item>
+		<item name="wcf.user.gallery.notification.galleryComment.description"><![CDATA[Sie erhalten eine neue Benachrichtigung, wenn jemand zu einem ihrer abonnierten Galerie-Bilder ein Kommentar schreibt.]]></item>
+		<item name="wcf.user.gallery.notification.galleryComment.short"><![CDATA[Neuer <a href="{@$event->getObject()->getURL()}{@SID_ARG_2ND}">Kommentar</a>{if $event->getObject()->userID} von <a href="index.php?page=User&amp;userID={@$event->getObject()->userID}{@SID_ARG_2ND}">{$event->getObject()->username}</a>{/if} zu einem ihrer abonnierten Galerie-Bilder]]></item>
+		<item name="wcf.user.gallery.notification.galleryComment.medium"><![CDATA[Neuer <a href="{@$event->getObject()->getURL()}{@SID_ARG_2ND}">Kommentar</a>{if $event->getObject()->userID} von <a href="index.php?page=User&amp;userID={@$event->getObject()->userID}{@SID_ARG_2ND}">{$event->getObject()->username}</a>{/if} zu einem ihrer abonnierten Galerie-Bilder]]></item>
+		<item name="wcf.user.gallery.notification.galleryComment.userMessages"><![CDATA[Es wurde soeben ein neuer <a href="{@$event->getObject()->getURL()}{@SID_ARG_2ND}">Kommentar</a>{if $event->getObject()->userID} von <a href="index.php?page=User&amp;userID={@$event->getObject()->userID}{@SID_ARG_2ND}">{$event->getObject()->username}</a>{/if} zu einem ihrer abonnierten Galerie-Bilder geschrieben.]]></item>
+		<item name="wcf.user.gallery.notification.galleryComment.mail"><![CDATA[Hallo {$user->username},
+Es wurde soeben ein neuer <a href="index.php?page=UserGalleryPhoto&photoID={$photoID}{@SID_ARG_2ND}">Kommentar</a> zu einem Ihrer abonnierten Galerie-Bilder geschrieben.
+
+Mit diesem Link gelangen Sie direkt zu dem neuen Kommentar: {@$pageURL}{@$event->getObject()->getURL()}]]></item>
+		<item name="wcf.user.gallery.notification.galleryComment.pm"><![CDATA[Hallo {$user->username},
+Es wurde soeben ein neuer Kommentar zu einem Ihrer abonnierten Galerie-Bilder geschrieben.
+Mit diesem Link gelangen Sie direkt zu dem neuen Kommentar: {@$pageURL}{@$event->getObject()->getURL()}]]></item>
+		<item name="wcf.user.gallery.comment.subscripe"><![CDATA[Kommentare abonnieren]]></item>
+		<item name="wcf.user.gallery.comment.unsubscripe"><![CDATA[Kommentare abbestellen]]></item>
+	</category>
+
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.user.profile.gallery.canSubscripeComments"><![CDATA[Kann Galerie Kommentare abonnieren]]></item>
+		<item name="wcf.acp.group.option.user.profile.gallery.canSubscripeComments.description"><![CDATA[Mitglieder dieser Benutzergruppe können Kommentare von Galerie Bildern abonnieren.]]></item>
+	</category>
+</language>

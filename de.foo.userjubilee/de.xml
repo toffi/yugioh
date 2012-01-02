@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language languagecode="de" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd">
+	<category name="wbb.index">
+		<item name="wbb.index.userjubilee"><![CDATA[User Jubiläen:]]></item>
+		<item name="wbb.index.userjubilee.description"><![CDATA[Folgende Mitglieder feiern heute am {TIME_NOW|date} ihr Foren-Jubiläum]]></item>
+		<item name="wbb.index.userjubilee.year"><![CDATA[Jahr]]></item>
+		<item name="wbb.index.userjubilee.years"><![CDATA[Jahre]]></item>
+	</category>
+
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.userjubilee_enable"><![CDATA[User Jubiläen anzeigen]]></item>
+		<item name="wcf.acp.option.userjubilee_enable.description"><![CDATA[Sollen die User Jubiläen angezeigt werden?]]></item>
+		<item name="wcf.acp.option.userjubilee_days_away"><![CDATA[Max. Tage der Abwesenheit für das User Jubiläum]]></item>
+		<item name="wcf.acp.option.userjubilee_days_away.description"><![CDATA[Vor wievielen Tagen muss der User mindestens das letzte Mal angemeldet gewesen sein, um in der User Jubiläens Anzeige mit aufgenommen zu werden? 0 deaktiviert diese Option.]]></item>
+	</category>
+
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.user.board.canViewUserjubilee"><![CDATA[Kann User Jubiläen auf der Startseite sehen]]></item>
+		<item name="wcf.acp.group.option.user.board.canViewUserjubilee.description"><![CDATA[Mitglieder dieser Benutzergruppe können die User Jubiläen auf der Startseite sehen.]]></item>
+	</category>
+</language>

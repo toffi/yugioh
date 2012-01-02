@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/options.xsd">
+	<import>
+		<categories>
+			<category name="event">
+				<parent>general</parent>
+				<showorder>10</showorder>
+			</category>
+		</categories>
+
+		<options>
+			<option name="event_enable">
+				<categoryname>event</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<showorder>1</showorder>
+			</option>
+			<option name="event_art">
+				<categoryname>event</categoryname>
+				<optiontype>radiobuttons</optiontype>
+				<defaultvalue>Radio</defaultvalue>
+				<showorder>2</showorder>
+				<enableoptions>event_enable</enableoptions>
+				<selectoptions>
+<![CDATA[1:wcf.acp.option.event_art.radio
+2:wcf.acp.option.event_art.tourney]]></selectoptions>
+			</option>
+			<option name="event_message">
+				<categoryname>event</categoryname>
+				<optiontype>textarea</optiontype>
+				<showorder>3</showorder>
+				<enableoptions>event_enable</enableoptions>
+			</option>
+		</options>
+	</import>
+</data>

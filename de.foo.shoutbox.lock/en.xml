@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="en">
+	<category name="wcf.user.option">
+		<item name="wcf.user.option.shoutboxLock"><![CDATA[Shoutbox ban]]></item>
+		<item name="wcf.user.option.shoutboxLock.description"><![CDATA[If this option is enabled, the user can no longer use the shoutbox.]]></item>
+	</category>
+
+    <category name="wcf.shoutbox">
+        <item name="wcf.shoutbox.entry.error.user.lock"><![CDATA[You have been blocked for the shoutbox.]]></item>
+    </category>
+</language>

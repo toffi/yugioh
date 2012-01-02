@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="en">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.clique"><![CDATA[Clan]]></item>
+		<item name="wcf.acp.option.category.clique.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.category.clique.general"><![CDATA[General]]></item>
+		<item name="wcf.acp.option.category.clique.general.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.category.clique.detail"><![CDATA[Clan Site]]></item>
+		<item name="wcf.acp.option.category.clique.detail.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.category.clique.general.list"><![CDATA[Clanlist]]></item>
+		<item name="wcf.acp.option.category.clique.general.list.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.category.clique.general.rights"><![CDATA[Clan Rights]]></item>
+		<item name="wcf.acp.option.category.clique.general.rights.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.clique_sidebar_enable"><![CDATA[Enable clan membership in sidebar.]]></item>
+		<item name="wcf.acp.option.clique_sidebar_enable.description"><![CDATA[Here you can set, whether the clan membership gets displayed in the message-sidebar.]]></item>
+		<item name="wcf.acp.option.clique_comments_per_page"><![CDATA[Number of clan comments]]></item>
+		<item name="wcf.acp.option.clique_comments_per_page.description"><![CDATA[Here you can set, how many comments get displayed on one site.]]></item>
+		<item name="wcf.acp.option.clique_comments_per_detail_page"><![CDATA[Number of latest clan comments]]></item>
+		<item name="wcf.acp.option.clique_comments_per_detail_page.description"><![CDATA[Here you can set, how many comments will be displayed on the detailed clan site.]]></item>
+		<item name="wcf.acp.option.clique_comments_character_number"><![CDATA[Comment character limit on the detailed clan site]]></item>
+		<item name="wcf.acp.option.clique_comments_character_number.description"><![CDATA[Here you can set, at which amount of characters a comment gets chopped.]]></item>
+		<item name="wcf.acp.option.clique_per_page"><![CDATA[How many clans are supposed to be displayed in the overview?]]></item>
+		<item name="wcf.acp.option.clique_per_page.description"><![CDATA[Here you can set, how many clans get displayed in the overview.]]></item>
+		<item name="wcf.acp.option.clique_visitors_enable"><![CDATA[Enable clan visitors]]></item>
+		<item name="wcf.acp.option.clique_visitors_enable.description"><![CDATA[If enabled, the latest clan visitors get displayed on the clan sites.]]></item>
+		<item name="wcf.acp.option.clique_visitors"><![CDATA[Number of clan visitors]]></item>
+		<item name="wcf.acp.option.clique_visitors.description"><![CDATA[Here you can set, how many clan visitors get displayed.]]></item>
+		<item name="wcf.acp.option.clique_list_columns"><![CDATA[Show selected columns]]></item>
+		<item name="wcf.acp.option.clique_list_columns.description"><![CDATA[Please choose which columns get displayed in the clan list. You can change the sortation by drag &amp; drop. To do so, simply click on an element and drag it over you screen while holding down left mouse.]]></item>
+		<item name="wcf.acp.option.clique_list_default_sort_field"><![CDATA[Sortation]]></item>
+		<item name="wcf.acp.option.clique_list_default_sort_field.description"><![CDATA[Here you can set, which column gets sorted.]]></item>
+		<item name="wcf.acp.option.clique_list_default_sort_order"><![CDATA[Order]]></item>
+		<item name="wcf.acp.option.clique_list_default_sort_order.description"><![CDATA[Set the order.]]></item>
+        <item name="wcf.acp.option.clique_list_description_character_number"><![CDATA[Character limit of description]]></item>
+		<item name="wcf.acp.option.clique_list_description_character_number.description"><![CDATA[Here you can set, at which amount of characters a description gets chopped on the detailed clan site.]]></item>
+		<item name="wcf.acp.option.clique_general_rights_canEditClique"><![CDATA[Can edit clan]]></item>
+		<item name="wcf.acp.option.clique_general_rights_canEditClique.description"><![CDATA[By clicking &raquo;Ctrl&laquo; (Windows) or &raquo;Command&laquo; (Mac OS) you can mark multiple items.]]></item>
+		<item name="wcf.acp.option.clique_general_rights_canDeleteClique"><![CDATA[Can delete clan]]></item>
+		<item name="wcf.acp.option.clique_general_rights_canDeleteClique.description"><![CDATA[By clicking &raquo;Ctrl&laquo; (Windows) or &raquo;Command&laquo; (Mac OS) you can mark multiple items.]]></item>
+		<item name="wcf.acp.option.clique_general_rights_canEditRights"><![CDATA[Can edit clan rights]]></item>
+		<item name="wcf.acp.option.clique_general_rights_canEditRights.description"><![CDATA[By clicking &raquo;Ctrl&laquo; (Windows) or &raquo;Command&laquo; (Mac OS) you can mark multiple items.]]></item>
+		<item name="wcf.acp.option.clique_general_rights_canInviteUsers"><![CDATA[Can invite users to the clan]]></item>
+		<item name="wcf.acp.option.clique_general_rights_canInviteUsers.description"><![CDATA[By clicking &raquo;Ctrl&laquo; (Windows) or &raquo;Command&laquo; (Mac OS) you can mark multiple items.]]></item>
+		<item name="wcf.acp.option.clique_general_rights_canAttendInvites"><![CDATA[Can edit receivable invitations]]></item>
+		<item name="wcf.acp.option.clique_general_rights_canAttendInvites.description"><![CDATA[By clicking &raquo;Ctrl&laquo; (Windows) or &raquo;Command&laquo; (Mac OS) you can mark multiple items.]]></item>
+		<item name="wcf.acp.option.clique_general_rights_canSeeComments"><![CDATA[Can see clan comments]]></item>
+		<item name="wcf.acp.option.clique_general_rights_canSeeComments.description"><![CDATA[By clicking &raquo;Ctrl&laquo; (Windows) or &raquo;Command&laquo; (Mac OS) you can mark multiple items.]]></item>
+		<item name="wcf.acp.option.clique_general_rights_canMakeComments"><![CDATA[Can create clan comments]]></item>
+		<item name="wcf.acp.option.clique_general_rights_canMakeComments.description"><![CDATA[By clicking &raquo;Ctrl&laquo; (Windows) or &raquo;Command&laquo; (Mac OS) you can mark multiple items.]]></item>
+		<item name="wcf.acp.option.clique_general_rights_canEditComments"><![CDATA[Can edit all clan comments]></item>
+		<item name="wcf.acp.option.clique_general_rights_canEditComments.description"><![CDATA[By clicking &raquo;Ctrl&laquo; (Windows) or &raquo;Command&laquo; (Mac OS) you can mark multiple items.]]></item>
+		<item name="wcf.acp.option.clique_general_rights_canDeleteComments"><![CDATA[Can delete clan comments]]></item>
+		<item name="wcf.acp.option.clique_general_rights_canDeleteComments.description"><![CDATA[By clicking &raquo;Ctrl&laquo; (Windows) or &raquo;Command&laquo; (Mac OS) you can mark multiple items.]]></item>
+		<item name="wcf.acp.option.clique_general_rights_canActivateModules"><![CDATA[Can enable and disable plug-ins for the clan]]></item>
+		<item name="wcf.acp.option.clique_general_rights_canActivateModules.description"><![CDATA[By clicking &raquo;Ctrl&laquo; (Windows) or &raquo;Command&laquo; (Mac OS) you can mark multiple items.]]></item>
+	</category>
+
+	<category name="wcf.acp.menu">
+		<item name="wcf.acp.menu.link.user.clique"><![CDATA[Clans]]></item>
+		<item name="wcf.acp.menu.link.user.clique.category"><![CDATA[Add clan category]]></item>
+		<item name="wcf.acp.menu.link.user.clique.category.list"><![CDATA[Clan category]]></item>
+	</category>
+
+	<category name="wcf.user.usercp">
+		<item name="wcf.user.usercp.menu.link.clique"><![CDATA[Clans]]></item>
+		<item name="wcf.user.usercp.menu.link.clique.raiser"><![CDATA[Clan administration]]></item>
+		<item name="wcf.user.usercp.menu.link.clique.overview"><![CDATA[Clans]]></item>
+	</category>
+
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.user.clique"><![CDATA[Clan]]></item>
+		<item name="wcf.acp.group.option.category.user.clique.description"><![CDATA[]]></item>
+		<item name="wcf.acp.group.option.category.user.clique.general"><![CDATA[General]]></item>
+		<item name="wcf.acp.group.option.category.user.clique.general.description"><![CDATA[]]></item>
+		<item name="wcf.acp.group.option.category.user.clique.comments"><![CDATA[Comments]]></item>
+		<item name="wcf.acp.group.option.category.user.clique.comments.description"><![CDATA[]]></item>
+		<item name="wcf.acp.group.option.category.mod.clique"><![CDATA[Clan]]></item>
+		<item name="wcf.acp.group.option.category.mod.clique.description"><![CDATA[]]></item>
+		<item name="wcf.acp.group.option.category.mod.clique.general"><![CDATA[General]]></item>
+		<item name="wcf.acp.group.option.category.mod.clique.general.description"><![CDATA[]]></item>
+		<item name="wcf.acp.group.option.user.clique.general.canSee"><![CDATA[Can see clans]]></item>
+		<item name="wcf.acp.group.option.user.clique.general.canSee.description"><![CDATA[Members of this user grup can see the clans.]]></item>
+		<item name="wcf.acp.group.option.user.clique.general.canRaise"><![CDATA[Can found a clan]]></item>
+		<item name="wcf.acp.group.option.user.clique.general.canRaise.description"><![CDATA[Members of this user group can found a clan.]]></item>
+		<item name="wcf.acp.group.option.user.clique.general.maxSize"><![CDATA[Maximum file size of pictures]]></item>
+		<item name="wcf.acp.group.option.user.clique.general.maxSize.description"><![CDATA[Maximum file size of uploaded pcitures [Byte].]]></item>
+		<item name="wcf.acp.group.option.user.clique.general.allowedFileExtensions"><![CDATA[Allowed file extensions]></item>
+		<item name="wcf.acp.group.option.user.clique.general.allowedFileExtensions.description"><![CDATA[Allowed extensions for uploaded pictures. One extension per row.]]></item>
+		<item name="wcf.acp.group.option.user.clique.general.maxHeight"><![CDATA[Maximum height of pictures]]></item>
+		<item name="wcf.acp.group.option.user.clique.general.maxHeight.description"><![CDATA[Maximum height of uploaded pictures [Pixel].]]></item>
+		<item name="wcf.acp.group.option.user.clique.general.maxWidth"><![CDATA[Maximum width of pictures]]></item>
+		<item name="wcf.acp.group.option.user.clique.general.maxWidth.description"><![CDATA[Maximum width of uploaded pictures [Pixel].]]></item>
+		<item name="wcf.acp.group.option.user.clique.comments.canMakeComment"><![CDATA[Can write comments]]></item>
+		<item name="wcf.acp.group.option.user.clique.comments.canMakeComment.description"><![CDATA[Members of this user group can write clan comments.]]></item>
+		<item name="wcf.acp.group.option.user.clique.comments.canEditOwnComments"><![CDATA[Can edit own comments]]></item>
+		<item name="wcf.acp.group.option.user.clique.comments.canEditOwnComments.description"><![CDATA[Members of this user group can edit own clan comments.]]></item>
+		<item name="wcf.acp.group.option.user.clique.comments.canDeleteOwnComments"><![CDATA[Can delete own comments]]></item>
+		<item name="wcf.acp.group.option.user.clique.comments.canDeleteOwnComments.description"><![CDATA[Members of this user group can delete own clan comments.]]></item>
+		<item name="wcf.acp.group.option.mod.clique.general.canEditEveryClique"><![CDATA[Can edit every clan]]></item>
+		<item name="wcf.acp.group.option.mod.clique.general.canEditEveryClique.description"><![CDATA[Members of this user group can edit every clan.]]></item>
+		<item name="wcf.acp.group.option.mod.clique.general.canAdministrateEveryClique"><![CDATA[Can administrate every clan]]></item>
+		<item name="wcf.acp.group.option.mod.clique.general.canAdministrateEveryClique.description"><![CDATA[Members of this user group can administrate every clan.]]></item>
+		<item name="wcf.acp.group.option.mod.clique.general.canDeleteEveryClique"><![CDATA[Can delete every clan]]></item>
+		<item name="wcf.acp.group.option.mod.clique.general.canDeleteEveryClique.description"><![CDATA[Members of this user group can delete every clan.]]></item>
+	</category>
+
+	<category name="wcf.user">
+		<item name="wcf.user.viewClique"><![CDATA[Go to clan profile of &raquo;{$cliqueName}&laquo;]]></item>
+		<item name="wcf.user.enteredClique"><![CDATA[Entered the clan]]></item>
+	</category>
+
+	<category name="wcf.clique.general">
+		<item name="wcf.clique.general.name.singulary"><![CDATA[Clan]]></item>
+		<item name="wcf.clique.general.name.plural"><![CDATA[Clans]]></item>
+		<item name="wcf.clique.general.status.0"><![CDATA[Public]]></item>
+		<item name="wcf.clique.general.status.1"><![CDATA[Closed]]></item>
+		<item name="wcf.clique.general.raiser"><![CDATA[Clan founder]]></item>
+		<item name="wcf.clique.general.creationDate"><![CDATA[Date of foundation]]></item>
+		<item name="wcf.clique.general.enter"><![CDATA[Enter clan]]></item>
+		<item name="wcf.clique.general.leave"><![CDATA[Leave clan]]></item>
+		<item name="wcf.clique.general.leave.sure"><![CDATA[Do you really want to leave this clan?]]></item>
+		<item name="wcf.clique.general.letters"><![CDATA[#ABCDEFGHIJKLMNOPQRSTUVWXYZ]]></item>
+		<item name="wcf.clique.general.search"><![CDATA[Search clans]]></item>
+		<item name="wcf.clique.general.back"><![CDATA[Go back]]></item>
+	</category>
+
+	<category name="wcf.clique.add">
+		<item name="wcf.clique.add"><![CDATA[Create new clan]]></item>
+		<item name="wcf.clique.add.general"><![CDATA[General]]></item>
+		<item name="wcf.clique.add.name"><![CDATA[Clan name]]></item>
+		<item name="wcf.clique.add.name.description"><![CDATA[Please enter the name of your clan.]]></item>
+		<item name="wcf.clique.add.name.error"><![CDATA[Your entered clan name is too long. It is limited to 255 characters.]]></item>
+		<item name="wcf.clique.add.shortDescription"><![CDATA[Short description of the clan]]></item>
+		<item name="wcf.clique.add.shortDescription.description"><![CDATA[Please enter a short description of your clan.]]></item>
+		<item name="wcf.clique.add.description"><![CDATA[Description of clan]]></item>
+		<item name="wcf.clique.add.description.description"><![CDATA[Please enter a description for your clan.]]></item>
+		<item name="wcf.clique.add.status"><![CDATA[Status of clan]]></item>
+		<item name="wcf.clique.add.status.description"><![CDATA[Please enter the status of your clan.]]></item>
+		<item name="wcf.clique.add.categories"><![CDATA[Clan category]]></item>
+		<item name="wcf.clique.add.categories.description"><![CDATA[Please enter the category of your clan.]]></item>
+		<item name="wcf.clique.add.picture"><![CDATA[Clan logo]]></item>
+		<item name="wcf.clique.add.picture.upload"><![CDATA[Upload clan logo]]></item>
+		<item name="wcf.clique.add.picture.upload.description"><![CDATA[You can upload a logo for your clan. The maximum file size is {#$this->user->getPermission('user.clique.general.maxWidth')}*{#$this->user->getPermission('user.clique.general.maxHeight')} Pixeln und {@$this->user->getPermission('user.clique.general.maxSize')|filesize}.]]></item>
+		<item name="wcf.clique.add.picture.download"><![CDATA[Download clan logo]]></item>
+		<item name="wcf.clique.add.picture.download.description"><![CDATA[You can download a logo for your clan. The maximum file size is {#$this->user->getPermission('user.clique.general.maxWidth')}*{#$this->user->getPermission('user.clique.general.maxHeight')} Pixeln und {@$this->user->getPermission('user.clique.general.maxSize')|filesize}.]]></item>
+		<item name="wcf.clique.add.successful"><![CDATA[You successfully created the clan "{$name}" !]]></item>
+		<item name="wcf.clique.add.error.illegalExtension"><![CDATA[The file &raquo;{$error.filename}&laquo; has an invalid extension. The allowed extensions are: {$allowedExtensions}]]></item>
+		<item name="wcf.clique.add.error.tooLarge"><![CDATA[The picture &raquo;{$error.filename}&laquo; exceeds the maximum file size. The maximum file size is {#$this->user->getPermission('user.clique.general.maxWidth')}*{#$this->user->getPermission('user.clique.general.maxHeight')} Pixeln und {@$this->user->getPermission('user.clique.general.maxSize')|filesize}.]]></item>
+		<item name="wcf.clique.add.error.badImage"><![CDATA[The file &raquo;{$error.filename}&laquo; is damaged or not a valid picture.]]></item>
+	</category>
+
+	<category name="wcf.clique.permission">
+		<item name="wcf.clique.permission.canEditClique"><![CDATA[Can edit clan]]></item>
+		<item name="wcf.clique.permission.canDeleteClique"><![CDATA[Can delete clan]]></item>
+		<item name="wcf.clique.permission.canEditRights"><![CDATA[Can edit clan rights]]></item>
+		<item name="wcf.clique.permission.canInviteUsers"><![CDATA[Can invite users to the clan]]></item>
+		<item name="wcf.clique.permission.canAttendInvites"><![CDATA[Can edit receivable invitations]]></item>
+		<item name="wcf.clique.permission.canSeeComments"><![CDATA[Can see clan comments]]></item>
+		<item name="wcf.clique.permission.canMakeComments"><![CDATA[Can create clan comments]]></item>
+		<item name="wcf.clique.permission.canEditComments"><![CDATA[Can edit all clan comments]]></item>
+		<item name="wcf.clique.permission.canDeleteComments"><![CDATA[Can delete all clan comments]]></item>
+        <item name="wcf.clique.permission.canActivateModules"><![CDATA[Can enable and disable plug-ins for the clan]]></item>
+	</category>
+
+	<category name="wcf.clique.edit">
+		<item name="wcf.clique.edit"><![CDATA[Edit clan]]></item>
+		<item name="wcf.clique.edit.description"><![CDATA[]]></item>
+		<item name="wcf.clique.edit.successful"><![CDATA[You have successfully edited "{$name}"]]></item>
+	</category>
+
+	<category name="wcf.clique.delete">
+		<item name="wcf.clique.delete"><![CDATA[Delete clan]]></item>
+		<item name="wcf.clique.delete.sure"><![CDATA[Do you really want to delete this clan?]]></item>
+	</category>
+
+	<category name="wcf.clique.detail">
+		<item name="wcf.clique.detail"><![CDATA[Clan details]]></item>
+		<item name="wcf.clique.detail.raiting"><![CDATA[Rate clan]]></item>
+		<item name="wcf.clique.detail.information"><![CDATA[Clan information]]></item>
+		<item name="wcf.clique.detail.raisinginfo"><![CDATA[Information of foundation]]></item>
+		<item name="wcf.clique.detail.visitors"><![CDATA[Clan visitors]]></item>
+		<item name="wcf.clique.detail.visitProfile"><![CDATA[Go to user profile of »{$visitorData->username}«]]></item>
+		<item name="wcf.clique.detail.category"><![CDATA[Category]]></item>
+		<item name="wcf.clique.detail.at"><![CDATA[By]]></item>
+		<item name="wcf.clique.detail.application"><![CDATA[Make an application]]></item>
+        <item name="wcf.clique.detail.application.error"><![CDATA[There is an error occurred during the application process. Please go back and try again.<br />Your resume text: {$message}]]></item>
+		<item name="wcf.clique.detail.applications"><![CDATA[Receivable applications]]></item>
+		<item name="wcf.clique.detail.applications.cancel"><![CDATA[Cancel application]]></item>
+	</category>
+
+	<category name="wcf.clique.overview">
+		<item name="wcf.clique.overview.description"><![CDATA[A total of {#$countCliquen} {if $countCliquen == 1}clan{else}clans{/if}]]></item>
+		<item name="wcf.clique.overview.list"><![CDATA[Clan list]]></item>
+		<item name="wcf.clique.overview.all"><![CDATA[All]]></item>
+		<item name="wcf.clique.overview.picture"><![CDATA[Clan logo]]></item>
+		<item name="wcf.clique.overview.shortDescription"><![CDATA[Short description]]></item>
+		<item name="wcf.clique.overview.noClique"><![CDATA[There is no clan with this initial letter.]]></item>
+		<item name="wcf.clique.overview.raiting"><![CDATA[Clan rating]]></item>
+	</category>
+
+	<category name="wcf.clique.categorie">
+		<item name="wcf.clique.categorie"><![CDATA[Clan categories]]></item>
+		<item name="wcf.clique.categorie.description"><![CDATA[A total of {#$cliqueCategories|count} {if $cliqueCategories|count == 1}category{else}categories{/if}]]></item>
+		<item name="wcf.clique.categorie.noClique"><![CDATA[There is no clan in this category.]]></item>
+	</category>
+
+	<category name="wcf.clique.membership">
+        <item name="wcf.clique.membership"><![CDATA[Members]]></item>
+		<item name="wcf.clique.membership.member"><![CDATA[Member]]></item>
+		<item name="wcf.clique.membership.members"><![CDATA[Members]]></item>
+		<item name="wcf.clique.membership.numberOfMembers"><![CDATA[There are {#$countMemberships} {if $countMemberships ==  1}{lang}wcf.clique.membership.member{/lang}{else}{lang}wcf.clique.membership.members{/lang}{/if} in this clan.]]></item>
+		<item name="wcf.clique.membership.own"><![CDATA[You are a member of the following clans]]></item>
+        <item name="wcf.clique.membership.since"><![CDATA[Date of entry]]></item>
+        <item name="wcf.clique.membership.all"><![CDATA[Show all members]]></item>
+	</category>
+
+	<category name="wcf.clique.invite">
+		<item name="wcf.clique.invite.text.singulary"><![CDATA[You received an invitation to join a clan]]></item>
+		<item name="wcf.clique.invite.text.plural"><![CDATA[You received multiple invitations to join several clans]]></item>
+		<item name="wcf.clique.invite.text.detail"><![CDATA[<a href="index.php?page=User&amp;userID={$invites.inviterID}">{$invites.username}</a> invited you to join the clan <a href="index.php?page=CliqueDetail&amp;cliqueID={$invites.cliqueID}">{$invites.name}</a>]]></item>
+		<item name="wcf.clique.invite.text.detail2"><![CDATA[<a href="index.php?page=User&amp;userID={$invite2.inviterID}">{$invite2.username}</a> invited you to join the clan <a href="index.php?page=CliqueDetail&amp;cliqueID={$invite2.cliqueID}">{$invite2.name}</a>]]></item>
+		<item name="wcf.clique.invite.accept"><![CDATA[Accept this invitation]]></item>
+		<item name="wcf.clique.invite.decline"><![CDATA[Decline this invitation]]></item>
+		<item name="wcf.clique.invite.cancel"><![CDATA[Hide this message]]></item>
+        <item name="wcf.clique.invite.succes"><![CDATA[You successfully invited &raquo;{$user->username}&laquo; !]]></item>
+	</category>
+
+	<category name="wcf.clique.raiser">
+		<item name="wcf.clique.raiser"><![CDATA[Clan management]]></item>
+		<item name="wcf.clique.raiser.rais"><![CDATA[Found a clan]]></item>
+		<item name="wcf.clique.raiser.leader"><![CDATA[You manage the following clans]]></item>
+		<item name="wcf.clique.raiser.leader.noresult"><![CDATA[You are not managing any clans at the moment.]]></item>
+	</category>
+
+	<category name="wcf.clique.comment">
+		<item name="wcf.clique.comment"><![CDATA[Comments]]></item>
+		<item name="wcf.clique.comment.singulary"><![CDATA[Comment]]></item>
+		<item name="wcf.clique.comment.overview"><![CDATA[Overview]]></item>
+		<item name="wcf.clique.comment.clique"><![CDATA[Clan comments of &raquo;{$clique->name}&laquo;]]></item>
+		<item name="wcf.clique.comment.preview"><![CDATA[Preview]]></item>
+		<item name="wcf.clique.comment.succes"><![CDATA[You successfully posted your comment.]]></item>
+		<item name="wcf.clique.comment.noone"><![CDATA[No existing comments.]]></item>
+		<item name="wcf.clique.comment.insert"><![CDATA[Post]]></item>
+		<item name="wcf.clique.comment.permalink"><![CDATA[Permalink to the {#$messageNumber}. post]]></item>
+		<item name="wcf.clique.comment.by"><![CDATA[By]]></item>
+		<item name="wcf.clique.comment.edit"><![CDATA[Edit]]></item>
+		<item name="wcf.clique.comment.delete.sure"><![CDATA[Do you really want to delete this clan comment?]]></item>
+		<item name="wcf.clique.comment.viewProfile"><![CDATA[Got to profile of &raquo;{$username}&laquo;]]></item>
+		<item name="wcf.clique.comment.showAll"><![CDATA[Show all posts]]></item>
+		<item name="wcf.clique.comment.makeInsert"><![CDATA[Post comment]]></item>
+		<item name="wcf.clique.comment.edit.successful"><![CDATA[You successfully edited the comment!]]></item>
+	</category>
+
+	<category name="wcf.clique.administrate">
+		<item name="wcf.clique.administrate"><![CDATA[Clan administration]]></item>
+		<item name="wcf.clique.administrate.description"><![CDATA[]]></item>
+		<item name="wcf.clique.administrate.members"><![CDATA[Invite users to the clan]]></item>
+        <item name="wcf.clique.administrate.invite"><![CDATA[Invite to {$cliqueName}]]></item>
+		<item name="wcf.clique.administrate.members.description"><![CDATA[Please enter the name of the user you want to invite. Multiple users get seperated by comma.]]></item>
+		<item name="wcf.clique.administrate.members.add"><![CDATA[User(s)]]></item>
+		<item name="wcf.clique.administrate.members.add.description"><![CDATA[Please enter the name of the user you want to invite. Multiple users get seperated by comma.]]></item>
+		<item name="wcf.clique.administrate.members.notFound"><![CDATA[Could'nt find user &raquo;{$users}&laquo;]]></item>.
+		<item name="wcf.clique.administrate.members.alreadyExist"><![CDATA[&raquo;{$users}&laquo; is already member of your clan.]]></item>
+		<item name="wcf.clique.administrate.members.alreadyInvitet"><![CDATA[&raquo;{$users}&laquo; has already received an invitation to the clan.]]></item>
+		<item name="wcf.clique.administrate.invites.notAnswered"><![CDATA[Receivable invitations]]></item>
+		<item name="wcf.clique.administrate.invites.notAnswered.description"><![CDATA[All unanswered invitations get listed here.]]></item>
+		<item name="wcf.clique.administrate.invites.notAnswered.noOne"><![CDATA[There are no unanswered invitations.]]></item>
+		<item name="wcf.clique.administrate.invites.delete"><![CDATA[Delete invitation]]></item>
+		<item name="wcf.clique.administrate.invites.text"><![CDATA[<a href="index.php?page=User&amp;userID={$notAnswerdInvite.inviteeID}{@SID_ARG_2ND}">{$notAnswerdInvite.username}</a> has been invited on {$notAnswerdInvite.time|fulldate}]]></item>
+		<item name="wcf.clique.administrate.successful"><![CDATA[You successfully saved the changes.]]></item>
+		<item name="wcf.clique.administrate.right"><![CDATA[Right]]></item>
+		<item name="wcf.clique.administrate.raiser"><![CDATA[Founder]]></item>
+		<item name="wcf.clique.administrate.administrator"><![CDATA[Administrator]]></item>
+		<item name="wcf.clique.administrate.moderator"><![CDATA[Moderator]]></item>
+		<item name="wcf.clique.administrate.member"><![CDATA[Member]]></item>
+		<item name="wcf.clique.administrate.guest"><![CDATA[Guest]]></item>
+		<item name="wcf.clique.administrate.usercp"><![CDATA[Member administration]]></item>
+		<item name="wcf.clique.administrate.usercp.description"><![CDATA[Here you can assign members to different groups.]]></item>
+		<item name="wcf.clique.administrate.usercp.noone"><![CDATA[There are no members to be edited.]]></item>
+		<item name="wcf.clique.administrate.kickUser"><![CDATA[Remove &raquo;{$username}&laquo; from the clan]]></item>
+		<item name="wcf.clique.administrate.functions"><![CDATA[Clan functions]]></item>
+		<item name="wcf.clique.administrate.functions.commentEnable"><![CDATA[Enable clan comments]]></item>
+		<item name="wcf.clique.administrate.functions.membershipEnable"><![CDATA[Enable members]]></item>
+		<item name="wcf.clique.administrate.application.text"><![CDATA[<a href="index.php?page=User&amp;userID={$aplication.userID}{@SID_ARG_2ND}">{$aplication.username}</a> made an application on {$aplication.time|fulldate} for the clan {$aplication.name} with the following text: {$aplication.message}]]></item>
+		<item name="wcf.clique.administrate.application.description"><![CDATA[All unanswered invitations get listed here.]]></item>
+		<item name="wcf.clique.administrate.application.noOne"><![CDATA[There are no unanswered invitations.]]></item>
+		<item name="wcf.clique.administrate.application.delete"><![CDATA[Decline application.]]></item>
+		<item name="wcf.clique.administrate.application.accept"><![CDATA[Accept application.]]></item>
+        <item name="wcf.clique.administrate.changeRaiser"><![CDATA[Assign clan to another user]]></item>
+        <item name="wcf.clique.administrate.changeRaiser.description"><![CDATA[Please enter the name of the user, who will be the new {lang}wcf.clique.administrate.raiser{/lang}.]]></item>
+        <item name="wcf.clique.administrate.changeRaiser.username"><![CDATA[Username]]></item>
+        <item name="wcf.clique.administrate.changeRaiser.sure"><![CDATA[Attention: You are about to assign the clan to another user. This can <strong>not</strong> be undone!]]></item>
+        <item name="wcf.clique.administrate.changeRaiser.sure.notFilled"><![CDATA[To assign the clan, you have to check the box.]]></item>
+   	</category>
+
+	<category name="wcf.header.menu">
+		<item name="wcf.header.menu.clique"><![CDATA[Clan]]></item>
+	</category>
+
+	<category name="wcf.search">
+		<item name="wcf.search.type.clique"><![CDATA[Clans]]></item>
+	</category>
+
+	<category name="wcf.acp.clique">
+		<item name="wcf.acp.clique.categorie"><![CDATA[Clan category]]></item>
+		<item name="wcf.acp.clique.categorie.description"><![CDATA[Please enter the title of the clan category.]]></item>
+		<item name="wcf.acp.clique.categorie.noresult"><![CDATA[There are no existing clan categories.]]></item>
+		<item name="wcf.acp.clique.categorie.edit"><![CDATA[Edit category]]></item>
+		<item name="wcf.acp.clique.categorie.add"><![CDATA[Add category]]></item>
+		<item name="wcf.acp.clique.categorie.success"><![CDATA[A category has been saved successfully.]]></item>
+		<item name="wcf.acp.clique.categorie.delete"><![CDATA[Delete category]]></item>
+		<item name="wcf.acp.clique.categorie.delete.success"><![CDATA[The clan category has been deleted successfully.]]></item>
+		<item name="wcf.acp.clique.categorie.delete.sure"><![CDATA[Do you really want to delete this clan category?]]></item>
+        <item name="wcf.acp.clique.categorie.show"><![CDATA[List categories]]></item>
+		<item name="wcf.acp.clique.categorie.general"><![CDATA[General]]></item>
+		<item name="wcf.acp.clique.categorie.showorder"><![CDATA[Order]]></item>
+		<item name="wcf.acp.clique.categorie.showorder.description"><![CDATA[Please enter an indenture number. This number indicates, in which way the clan category gets ordered in relation to other clan categories.]]></item>
+		<item name="wcf.acp.clique.categorie.activate"><![CDATA[Enable clan category]]></item>
+		<item name="wcf.acp.clique.categorie.deactivate"><![CDATA[Disable clan category]]></item>
+	</category>
+
+	<category name="wcf.usersOnline">
+		<item name="wcf.usersOnline.location.cliqueAdd"><![CDATA[<a href="index.php?form=CliqueAdd{SID_ARG_2ND}">Found a clan</a>]]></item>
+		<item name="wcf.usersOnline.location.cliqueOverview"><![CDATA[<a href="index.php?page=CliqueOverview{SID_ARG_2ND}">Clan list</a>]]></item>
+		<item name="wcf.usersOnline.location.cliqueCategories"><![CDATA[<a href="index.php?page=CliqueCategories{SID_ARG_2ND}">Clan categories</a>]]></item>
+		<item name="wcf.usersOnline.location.cliquenOverviewCategory"><![CDATA[<a href="index.php?page=CliquenOverviewCategory{SID_ARG_2ND}">Clan categories</a>]]></item>
+		<item name="wcf.usersOnline.location.cliqueDetail"><![CDATA[Clan: {$clique}]]></item>
+		<item name="wcf.usersOnline.location.cliqueEdit"><![CDATA[Edits the clan: {$clique}]]></item>
+		<item name="wcf.usersOnline.location.cliqueAdministrate"><![CDATA[Administrates the clan: {$clique}]]></item>
+		<item name="wcf.usersOnline.location.cliqueComments"><![CDATA[Comments: {$clique}]]></item>
+		<item name="wcf.usersOnline.location.cliqueAddComment"><![CDATA[Posts a new comment to the clan {$clique}]]></item>
+		<item name="wcf.usersOnline.location.cliqueEditComment"><![CDATA[Edits a new comment of the clan {$clique}]]></item>
+	</category>
+</language>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/cliquemenuitem.xsd">
+	<import>
+		<cliquemenuitem name="wcf.clique.comment.overview">
+			<icon>profileM.png</icon>
+			<link>index.php?page=CliqueDetail</link>
+		</cliquemenuitem>
+
+		<cliquemenuitem name="wcf.clique.membership">
+			<icon>membersM.png</icon>
+			<link>index.php?page=CliqueMembers</link>
+		</cliquemenuitem>
+
+		<cliquemenuitem name="wcf.clique.comment">
+			<icon>friendsM.png</icon>
+			<link>index.php?page=CliqueComments</link>
+			<permissions>canSeeComments</permissions>
+		</cliquemenuitem>
+	</import>
+</data>

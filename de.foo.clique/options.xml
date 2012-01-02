@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/options.xsd">
+	<import>
+		<categories>
+			<category name="clique"></category>
+			<category name="clique.general">
+				<parent>clique</parent>
+			</category>
+			<category name="clique.detail">
+				<parent>clique</parent>
+			</category>
+
+			<category name="clique.general.list">
+				<parent>clique.general</parent>
+			</category>
+			<category name="clique.general.rights">
+				<parent>clique.general</parent>
+			</category>
+		</categories>
+
+<!-- General -->
+		<options>
+			<option name="clique_sidebar_enable">
+				<categoryname>clique.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+
+			<option name="clique_comments_per_page">
+				<categoryname>clique.general</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>10</defaultvalue>
+			</option>
+
+			<option name="clique_comments_character_number">
+				<categoryname>clique.general</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>100</defaultvalue>
+			</option>
+
+<!-- Liste -->
+			<option name="clique_per_page">
+				<categoryname>clique.general.list</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>20</defaultvalue>
+			</option>
+
+			<option name="clique_list_columns">
+				<categoryname>clique.general.list</categoryname>
+				<optiontype>cliquelistcolumns</optiontype>
+				<defaultvalue><![CDATA[name,time,status,shortDescription,description,image,rating]]></defaultvalue>
+			</option>
+
+			<option name="clique_list_default_sort_field">
+				<categoryname>clique.general.list</categoryname>
+				<optiontype>cliquelistsortfield</optiontype>
+				<defaultvalue><![CDATA[name]]></defaultvalue>
+			</option>
+
+			<option name="clique_list_default_sort_order">
+				<categoryname>clique.general.list</categoryname>
+				<optiontype>select</optiontype>
+				<defaultvalue><![CDATA[DESC]]></defaultvalue>
+				<selectoptions><![CDATA[ASC:wcf.global.sortOrder.ascending
+DESC:wcf.global.sortOrder.descending]]></selectoptions>
+			</option>
+
+			<option name="clique_list_description_character_number">
+				<categoryname>clique.general.list</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>100</defaultvalue>
+			</option>
+
+<!-- Cliquenrechte -->
+			<option name="clique_general_rights_canEditClique">
+				<categoryname>clique.general.rights</categoryname>
+				<optiontype>multiselect</optiontype>
+				<defaultvalue><![CDATA[4
+3]]></defaultvalue>
+				<selectoptions>1:wcf.clique.administrate.guest
+2:wcf.clique.administrate.member
+3:wcf.clique.administrate.moderator
+4:wcf.clique.administrate.administrator</selectoptions>
+			</option>
+
+			<option name="clique_general_rights_canDeleteClique">
+				<categoryname>clique.general.rights</categoryname>
+				<optiontype>multiselect</optiontype>
+				<defaultvalue><![CDATA[4]]></defaultvalue>
+				<selectoptions>1:wcf.clique.administrate.guest
+2:wcf.clique.administrate.member
+3:wcf.clique.administrate.moderator
+4:wcf.clique.administrate.administrator</selectoptions>
+			</option>
+
+			<option name="clique_general_rights_canEditRights">
+				<categoryname>clique.general.rights</categoryname>
+				<optiontype>multiselect</optiontype>
+				<defaultvalue><![CDATA[4]]></defaultvalue>
+				<selectoptions>1:wcf.clique.administrate.guest
+2:wcf.clique.administrate.member
+3:wcf.clique.administrate.moderator
+4:wcf.clique.administrate.administrator</selectoptions>
+			</option>
+
+			<option name="clique_general_rights_canInviteUsers">
+				<categoryname>clique.general.rights</categoryname>
+				<optiontype>multiselect</optiontype>
+				<defaultvalue><![CDATA[4
+3
+2]]></defaultvalue>
+				<selectoptions>1:wcf.clique.administrate.guest
+2:wcf.clique.administrate.member
+3:wcf.clique.administrate.moderator
+4:wcf.clique.administrate.administrator</selectoptions>
+			</option>
+
+			<option name="clique_general_rights_canAttendInvites">
+				<categoryname>clique.general.rights</categoryname>
+				<optiontype>multiselect</optiontype>
+				<defaultvalue><![CDATA[4
+3]]></defaultvalue>
+				<selectoptions>1:wcf.clique.administrate.guest
+2:wcf.clique.administrate.member
+3:wcf.clique.administrate.moderator
+4:wcf.clique.administrate.administrator</selectoptions>
+			</option>
+
+			<option name="clique_general_rights_canSeeComments">
+				<categoryname>clique.general.rights</categoryname>
+				<optiontype>multiselect</optiontype>
+				<defaultvalue><![CDATA[4
+3
+2
+1]]></defaultvalue>
+				<selectoptions>1:wcf.clique.administrate.guest
+2:wcf.clique.administrate.member
+3:wcf.clique.administrate.moderator
+4:wcf.clique.administrate.administrator</selectoptions>
+			</option>
+
+			<option name="clique_general_rights_canMakeComments">
+				<categoryname>clique.general.rights</categoryname>
+				<optiontype>multiselect</optiontype>
+				<defaultvalue><![CDATA[4
+3
+2
+1]]></defaultvalue>
+				<selectoptions>1:wcf.clique.administrate.guest
+2:wcf.clique.administrate.member
+3:wcf.clique.administrate.moderator
+4:wcf.clique.administrate.administrator</selectoptions>
+			</option>
+
+			<option name="clique_general_rights_canEditComments">
+				<categoryname>clique.general.rights</categoryname>
+				<optiontype>multiselect</optiontype>
+				<defaultvalue><![CDATA[4
+3
+2]]></defaultvalue>
+				<selectoptions>1:wcf.clique.administrate.guest
+2:wcf.clique.administrate.member
+3:wcf.clique.administrate.moderator
+4:wcf.clique.administrate.administrator</selectoptions>
+			</option>
+
+			<option name="clique_general_rights_canDeleteComments">
+				<categoryname>clique.general.rights</categoryname>
+				<optiontype>multiselect</optiontype>
+				<defaultvalue><![CDATA[4
+3]]></defaultvalue>
+				<selectoptions>1:wcf.clique.administrate.guest
+2:wcf.clique.administrate.member
+3:wcf.clique.administrate.moderator
+4:wcf.clique.administrate.administrator</selectoptions>
+			</option>
+
+			<option name="clique_general_rights_canActivateModules">
+				<categoryname>clique.general.rights</categoryname>
+				<optiontype>multiselect</optiontype>
+				<defaultvalue><![CDATA[4]]></defaultvalue>
+				<selectoptions>1:wcf.clique.administrate.guest
+2:wcf.clique.administrate.member
+3:wcf.clique.administrate.moderator
+4:wcf.clique.administrate.administrator</selectoptions>
+			</option>
+
+<!-- Detail -->
+			<option name="clique_comments_per_detail_page">
+				<categoryname>clique.detail</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>5</defaultvalue>
+			</option>
+
+			<option name="clique_visitors_enable">
+				<categoryname>clique.detail</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<enableoptions>clique_visitors</enableoptions>
+			</option>
+
+			<option name="clique_visitors">
+				<categoryname>clique.detail</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>10</defaultvalue>
+			</option>
+
+		</options>
+	</import>
+</data>

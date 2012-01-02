@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de-informal">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.guthaben_pay_per_changename"><![CDATA[Kosten zum Ändern des Benutzernamens]]></item>
+		<item name="wcf.acp.option.guthaben_pay_per_changename.description"><![CDATA[Dieser Betrag wird jedem User abgezogen, wenn er seinen Benutzernamen ändert. Hat er nicht genug Guthaben, so kann er seinen Benutzernamen auch nicht ändern!]]></item>
+		<item name="wcf.acp.option.guthaben_pay_per_changenameflat"><![CDATA[Kosten für die Flatrate für den Benutzernamewechsel]]></item>
+		<item name="wcf.acp.option.guthaben_pay_per_changenameflat.description"><![CDATA[Dieser Betrag wird jedem User abgezogen, wenn er sich eine Flatrate für den Benutzernamenswechsel kauft. Hat er nicht genug Guthaben, so kann er die Flatrate auch nicht kaufen!]]></item>
+	</category>
+
+	<category name="wcf.guthaben.prices">
+		<item name="wcf.guthaben.prices.changename"><![CDATA[Preis pro Benutzernamen Änderung]]></item>
+		<item name="wcf.guthaben.prices.changename.description"><![CDATA[Diesen Preis musst du bezahlen, um deinen Benutzernamen zu ändern.]]></item>
+		<item name="wcf.guthaben.prices.changenameflat"><![CDATA[Preis für eine Benutzernamen-Flatrate]]></item>
+		<item name="wcf.guthaben.prices.changenameflat.description"><![CDATA[Diesen Preis musst du bezahlen, um dir eine Flatrate für den Benutzernamenswechsel zu kaufen.]]></item>
+	</category>
+
+	<category name="wcf.guthaben.log">
+		<item name="wcf.guthaben.log.changename"><![CDATA[Du hast deinen Benutzernamen geändert]]></item>
+		<item name="wcf.guthaben.log.changenameflat"><![CDATA[Du hast eine Benutzernamen-Flatrate gekauft]]></item>
+		<item name="wcf.guthaben.log.changename.nomoney"><![CDATA[Du hast nicht genug {$currency} um deinen Benutzernamen zu ändern.]]></item>
+		<item name="wcf.guthaben.log.changenameflat.nomoney"><![CDATA[Du hast nicht genug {$currency} um dir eine Benutzernamen-Flatrate zuzulegen.]]></item>
+		<item name="wcf.guthaben.log.changenameflat.alreadyexist"><![CDATA[Du kannst dir keine zweite Flatrate für den Benutzernamenswechsel zulegen.]]></item>
+	</category>
+
+	<category name="wcf.guthaben.mainpage">
+		<item name="wcf.guthaben.mainpage.changename"><![CDATA[Benutzernamen Änderung]]></item>
+		<item name="wcf.guthaben.mainpage.changename.description"><![CDATA[Hier kannst du dir einen neue Benutzernamen kaufen.]]></item>
+		<item name="wcf.guthaben.mainpage.changenameflat"><![CDATA[Benutzernamen-Flatrate]]></item>
+		<item name="wcf.guthaben.mainpage.changenameflat.description"><![CDATA[Hier kannst du dir eine Flatrate zum Benutzernamenswechsel kaufen.]]></item>
+	</category>
+
+	<category name="wcf.user.option">
+		<item name="wcf.user.option.category.settings.currency"><![CDATA[Guthaben Flatrates]]></item>
+		<item name="wcf.user.option.changenameFlat"><![CDATA[Benutzernamen-Flatrate]]></item>
+		<item name="wcf.user.option.changenameFlat.description"><![CDATA[Hat dieser User eine Benutzernamen-Flatrate für die Benutzernamenswechsel?]]></item>
+	</category>
+</language>

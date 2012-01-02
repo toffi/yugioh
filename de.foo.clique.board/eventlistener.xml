@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/eventlistener.xsd">
+	<import>
+
+		<eventlistener>
+			<eventclassname>PostAddForm</eventclassname>
+			<eventname>saved</eventname>
+			<listenerclassfile>lib/system/event/listener/CliquePostAddListener.class.php</listenerclassfile>
+			<inherit>1</inherit>
+            <niceValue>127</niceValue>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname>ThreadAddForm</eventclassname>
+			<eventname>saved</eventname>
+			<listenerclassfile>lib/system/event/listener/CliqueThreadAddListener.class.php</listenerclassfile>
+			<inherit>1</inherit>
+            <niceValue>127</niceValue>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname>PostReportForm</eventclassname>
+			<eventname>saved</eventname>
+			<listenerclassfile>lib/system/event/listener/CliquePostReportListener.class.php</listenerclassfile>
+			<inherit>1</inherit>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname>PostEditForm</eventclassname>
+			<eventname>saved</eventname>
+			<listenerclassfile>lib/system/event/listener/CliquePostEditListener.class.php</listenerclassfile>
+			<inherit>1</inherit>
+		</eventlistener>
+
+<!--CliqueAddForm-->
+		<eventlistener>
+			<eventclassname>CliqueAddForm</eventclassname>
+			<eventname>readParameters</eventname>
+			<listenerclassfile>lib/system/event/listener/CliqueAddPermissionListener.class.php</listenerclassfile>
+			<inherit>0</inherit>
+		</eventlistener>
+
+<!--BoardAdd-->
+		<eventlistener>
+			<eventClassName>BoardAddForm</eventClassName>
+			<eventName>assignVariables</eventName>
+			<listenerClassFile>lib/system/event/listener/CliqueACPListener.class.php</listenerClassFile>
+			<environment>admin</environment>
+			<inherit>1</inherit>
+		</eventlistener>
+
+		<eventlistener>
+			<eventClassName>BoardAddForm</eventClassName>
+			<eventName>readFormParameters</eventName>
+			<listenerClassFile>lib/system/event/listener/CliqueACPListener.class.php</listenerClassFile>
+			<environment>admin</environment>
+			<inherit>1</inherit>
+		</eventlistener>
+
+		<eventlistener>
+			<eventClassName>BoardAddForm</eventClassName>
+			<eventName>save</eventName>
+			<listenerClassFile>lib/system/event/listener/CliqueACPListener.class.php</listenerClassFile>
+			<environment>admin</environment>
+			<inherit>1</inherit>
+		</eventlistener>
+
+<!--BoardPage-->
+		<eventlistener>
+			<eventClassName>BoardPage</eventClassName>
+			<eventName>readData</eventName>
+			<listenerClassFile>lib/system/event/listener/CliqueRedirectListener.class.php</listenerClassFile>
+			<environment>user</environment>
+			<inherit>0</inherit>
+		</eventlistener>
+
+<!--ThreadPage-->
+		<eventlistener>
+			<eventClassName>ThreadPage</eventClassName>
+			<eventName>readData</eventName>
+			<listenerClassFile>lib/system/event/listener/CliqueRedirectListener.class.php</listenerClassFile>
+			<environment>user</environment>
+			<inherit>0</inherit>
+		</eventlistener>
+
+<!--CliqueAdministrateForm-->
+		<eventlistener>
+			<eventclassname>CliqueAdministrateForm</eventclassname>
+			<eventname>save</eventname>
+			<listenerclassfile>lib/system/event/listener/CliqueAddBoardListener.class.php</listenerclassfile>
+			<inherit>0</inherit>
+		</eventlistener>
+
+		<eventlistener>
+			<eventClassName>CliqueAdministrateForm</eventClassName>
+			<eventName>readData</eventName>
+			<listenerClassFile>lib/system/event/listener/CliqueBoardPermissionAdministrateListener.class.php</listenerClassFile>
+			<environment>user</environment>
+			<inherit>0</inherit>
+		</eventlistener>
+
+		<eventlistener>
+			<eventClassName>CliqueAdministrateForm</eventClassName>
+			<eventName>readFormParameters</eventName>
+			<listenerClassFile>lib/system/event/listener/CliqueBoardPermissionAdministrateListener.class.php</listenerClassFile>
+			<environment>user</environment>
+			<inherit>0</inherit>
+		</eventlistener>
+
+<!--CliqueDetailPage-->
+		<eventlistener>
+			<eventClassName>CliqueDetailPage</eventClassName>
+			<eventName>assignVariables</eventName>
+			<listenerClassFile>lib/system/event/listener/CliqueDeatilPageLastThreads.class.php</listenerClassFile>
+			<environment>user</environment>
+			<inherit>0</inherit>
+		</eventlistener>
+
+<!--CliqueDetailPage-->
+		<eventlistener>
+			<eventClassName>CliqueDeleteAction</eventClassName>
+			<eventName>execute</eventName>
+			<listenerClassFile>lib/system/event/listener/CliqueDeleteListener.class.php</listenerClassFile>
+			<environment>user</environment>
+			<inherit>0</inherit>
+		</eventlistener>
+
+<!--CliqueDetailPage-->
+		<eventlistener>
+			<eventClassName>CliqueEditForm</eventClassName>
+			<eventName>save</eventName>
+			<listenerClassFile>lib/system/event/listener/CliqueBoardRenameListener.class.php</listenerClassFile>
+			<environment>user</environment>
+			<inherit>0</inherit>
+		</eventlistener>
+
+	</import>
+</data>

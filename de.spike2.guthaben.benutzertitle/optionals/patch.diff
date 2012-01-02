@@ -1,0 +1,10 @@
+--- C:/Users/SpIkE2/Desktop/userOptionFieldList.tpl	Wed Sep 29 19:48:55 2010
++++ C:/Users/SpIkE2/Desktop/userOptionFieldList (2).tpl	Wed Sep 29 19:48:27 2010
+@@ -80,6 +80,7 @@
+ 					<label for="{$option.optionName}">{lang}wcf.user.option.{$option.optionName}{/lang}</label>
+ 				</div>
+ 				<div class="formField">
++					{if $option.optionName == 'userTitle' && $this->user->signatureFlat != 1}<p class="info">{lang}wcf.user.usertitle.guthabenInfo{/lang}</p>{/if}
+ 					{@$option.html}
+ 					{@$innerError}			
+ 				</div>

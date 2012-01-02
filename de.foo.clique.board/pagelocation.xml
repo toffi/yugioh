@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/pagelocation.xsd">
+	<import>
+		<pagelocation name="wbb.usersOnline.location.board">
+			<pattern><![CDATA[index\.php\?page=CliqueBoard&.*cliqueID=(\d+)]]></pattern>
+			<classpath>lib/data/page/location/CliqueBoardLocation.class.php</classpath>
+		</pagelocation>
+		<pagelocation name="wbb.usersOnline.location.post.edit">
+			<pattern><![CDATA[index\.php\?form=CliquePostEdit&.*postID=(\d+)]]></pattern>
+			<classpath>lib/data/page/location/PostLocation.class.php</classpath>
+		</pagelocation>
+		<pagelocation name="wbb.usersOnline.location.thread.add">
+			<pattern><![CDATA[index\.php\?form=CliqueThreadAdd&.*boardID=(\d+)]]></pattern>
+			<classpath>lib/data/page/location/BoardLocation.class.php</classpath>
+		</pagelocation>
+		<pagelocation name="wbb.usersOnline.location.post.add">
+			<pattern><![CDATA[index\.php\?form=CliquePost(?:Quick)?Add&.*threadID=(\d+)]]></pattern>
+			<classpath>lib/data/page/location/ThreadLocation.class.php</classpath>
+		</pagelocation>
+		<pagelocation name="wbb.usersOnline.location.post.reply">
+			<pattern><![CDATA[index\.php\?form=CliquePostAdd&.*postID=(\d+)]]></pattern>
+			<classpath>lib/data/page/location/PostLocation.class.php</classpath>
+		</pagelocation>
+		<pagelocation name="wbb.usersOnline.location.post.report">
+			<pattern><![CDATA[index\.php\?form=CliquePostReport&.*postID=(\d+)]]></pattern>
+			<classpath>lib/data/page/location/PostLocation.class.php</classpath>
+		</pagelocation>
+		<pagelocation name="wbb.usersOnline.location.thread">
+			<pattern><![CDATA[index\.php\?page=CliqueThread&.*threadID=(\d+)]]></pattern>
+			<classpath>lib/data/page/location/ThreadLocation.class.php</classpath>
+		</pagelocation>
+		<pagelocation name="wbb.usersOnline.location.thread.post">
+			<pattern><![CDATA[index\.php\?page=CliqueThread&.*postID=(\d+)]]></pattern>
+			<classpath>lib/data/page/location/PostLocation.class.php</classpath>
+		</pagelocation>
+	</import>
+</data>

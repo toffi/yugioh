@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/guthabenprices.xsd">
+	<import>
+		<guthabenprices name="wcf.guthaben.prices.avatar">
+			<description>wcf.guthaben.prices.avatar.description</description>
+			<price>GUTHABEN_PAY_PER_AVATAR</price>
+		</guthabenprices>
+
+		<guthabenprices name="wcf.guthaben.prices.avatarflat">
+			<description>wcf.guthaben.prices.avatarflat.description</description>
+			<price>GUTHABEN_PAY_PER_AVATARFLAT</price>
+		</guthabenprices>
+	</import>
+</data>

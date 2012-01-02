@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/pagelocation.xsd">
+	<import>
+		<pagelocation name="wcf.usersOnline.location.cliqueAdd">
+			<pattern><![CDATA[index\.php\?form=CliqueAdd]]></pattern>
+		</pagelocation>
+		<pagelocation name="wcf.usersOnline.location.cliqueOverview">
+			<pattern><![CDATA[index\.php\?page=CliqueOverview]]></pattern>
+		</pagelocation>
+		<pagelocation name="wcf.usersOnline.location.cliqueCategories">
+			<pattern><![CDATA[index\.php\?page=CliqueCategories]]></pattern>
+		</pagelocation>
+		<pagelocation name="wcf.usersOnline.location.cliquenOverviewCategory">
+			<pattern><![CDATA[index\.php\?page=CliquenOverviewCategory]]></pattern>
+		</pagelocation>
+		<pagelocation name="wcf.usersOnline.location.cliqueDetail">
+			<pattern><![CDATA[index\.php\?page=CliqueDetail&.*cliqueID=(\d+)]]></pattern>
+			<classpath>lib/data/page/location/CliqueLocation.class.php</classpath>
+		</pagelocation>
+		<pagelocation name="wcf.usersOnline.location.cliqueEdit">
+			<pattern><![CDATA[index\.php\?form=CliqueEdit&.*cliqueID=(\d+)]]></pattern>
+			<classpath>lib/data/page/location/CliqueLocation.class.php</classpath>
+		</pagelocation>
+		<pagelocation name="wcf.usersOnline.location.cliqueAdministrate">
+			<pattern><![CDATA[index\.php\?form=CliqueAdministrate&.*cliqueID=(\d+)]]></pattern>
+			<classpath>lib/data/page/location/CliqueLocation.class.php</classpath>
+		</pagelocation>
+		<pagelocation name="wcf.usersOnline.location.cliqueComments">
+			<pattern><![CDATA[index\.php\?page=CliqueComments&.*cliqueID=(\d+)]]></pattern>
+			<classpath>lib/data/page/location/CliqueLocation.class.php</classpath>
+		</pagelocation>
+		<pagelocation name="wcf.usersOnline.location.cliqueAddComment">
+			<pattern><![CDATA[index\.php\?form=CliqueAddComment&.*cliqueID=(\d+)]]></pattern>
+			<classpath>lib/data/page/location/CliqueLocation.class.php</classpath>
+		</pagelocation>
+		<pagelocation name="wcf.usersOnline.location.cliqueEditComment">
+			<pattern><![CDATA[index\.php\?form=CliqueEditComment&.*cliqueID=(\d+)]]></pattern>
+			<classpath>lib/data/page/location/CliqueLocation.class.php</classpath>
+		</pagelocation>
+	</import>
+</data>

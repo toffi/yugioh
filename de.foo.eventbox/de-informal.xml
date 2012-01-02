@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de-informal">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.event"><![CDATA[Event]]></item>
+		<item name="wcf.acp.option.category.event.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.event_enable"><![CDATA[deaktivieren]]></item>
+		<item name="wcf.acp.option.event_enable.description"><![CDATA[Event Box deaktivieren]]></item>
+		<item name="wcf.acp.option.event_message"><![CDATA[Nachricht]]></item>
+		<item name="wcf.acp.option.event_message.description"><![CDATA[Event Box Nachricht]]></item>
+		<item name="wcf.acp.option.event_art"><![CDATA[Box Art]]></item>
+		<item name="wcf.acp.option.event_art.description"><![CDATA[Für welches Event soll die Event Box aktiviert werden?]]></item>
+		<item name="wcf.acp.option.event_art.radio"><![CDATA[Radio]]></item>
+		<item name="wcf.acp.option.event_art.tourney"><![CDATA[Tunier]]></item>
+	</category>
+
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.mod.board.canEditEvent"><![CDATA[Kann Event Box editieren]]></item>
+		<item name="wcf.acp.group.option.mod.board.canEditEvent.description"><![CDATA[]]></item>
+		<item name="wcf.acp.group.option.user.board.canSeeEvent"><![CDATA[Kann Event Box sehen]]></item>
+		<item name="wcf.acp.group.option.user.board.canSeeEvent.description"><![CDATA[]]></item>
+	</category>
+
+	<category name="wcf.eventbox">
+		<item name="wcf.eventbox.title"><![CDATA[Event Box]]></item>
+		<item name="wcf.eventbox.title.description"><![CDATA[Hier kannst du die Event Box bearbeiten!]]></item>
+		<item name="wcf.eventbox.error"><![CDATA[Diese Kombination ist nicht zulässig! Bitte gib etwas ein!]]></item>
+		<item name="wcf.eventbox.sent"><![CDATA[Die Event Box wurde erfolgreich geädert!]]></item>
+		<item name="wcf.eventbox.deakt"><![CDATA[Event Box deaktivieren]]></item>
+		<item name="wcf.eventbox.deakt.description"><![CDATA[Deaktivieren]]></item>
+		<item name="wcf.eventbox.text"><![CDATA[Nachricht]]></item>
+		<item name="wcf.eventbox.button"><![CDATA[Speichern]]></item>
+	</category>
+
+	<category name="wbb.usersOnline">
+		<item name="wbb.usersOnline.location.eventboxedit"><![CDATA[Event Box bearbeiten]]></item>
+	</category>
+</language>

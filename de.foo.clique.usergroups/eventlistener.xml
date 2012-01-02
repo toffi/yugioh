@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/eventlistener.xsd">
+	<import>
+
+<!--User-->
+		<eventlistener>
+			<eventclassname>CliqueJoinAction</eventclassname>
+			<eventname>addUserToClique</eventname>
+			<listenerclassfile>lib/system/event/listener/CliqueUserGroupListener.class.php</listenerclassfile>
+			<inherit>1</inherit>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname>CliqueInviteAction</eventclassname>
+			<eventname>addUserToClique</eventname>
+			<listenerclassfile>lib/system/event/listener/CliqueUserGroupListener.class.php</listenerclassfile>
+			<inherit>0</inherit>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname>CliqueApplicationAcceptAction</eventclassname>
+			<eventname>addUserToClique</eventname>
+			<listenerclassfile>lib/system/event/listener/CliqueUserGroupListener.class.php</listenerclassfile>
+			<inherit>0</inherit>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname>CliqueLeaveAction</eventclassname>
+			<eventname>deleteUserFromClique</eventname>
+			<listenerclassfile>lib/system/event/listener/CliqueUserGroupListener.class.php</listenerclassfile>
+			<inherit>0</inherit>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname>CliqueKickUserAction</eventclassname>
+			<eventname>deleteUserFromClique</eventname>
+			<listenerclassfile>lib/system/event/listener/CliqueUserGroupListener.class.php</listenerclassfile>
+			<inherit>0</inherit>
+		</eventlistener>
+
+<!--Group-->
+		<eventlistener>
+			<eventclassname>CliqueDeleteAction</eventclassname>
+			<eventname>execute</eventname>
+			<listenerclassfile>lib/system/event/listener/CliqueGroupListener.class.php</listenerclassfile>
+			<inherit>0</inherit>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname>CliqueAddForm</eventclassname>
+			<eventname>save</eventname>
+			<listenerclassfile>lib/system/event/listener/CliqueGroupListener.class.php</listenerclassfile>
+			<inherit>0</inherit>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname>CliqueEditForm</eventclassname>
+			<eventname>save</eventname>
+			<listenerclassfile>lib/system/event/listener/CliqueGroupListener.class.php</listenerclassfile>
+			<inherit>0</inherit>
+		</eventlistener>
+
+	</import>
+</data>

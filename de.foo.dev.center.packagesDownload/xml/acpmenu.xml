@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/acpmenu.xsd">
+	<import>
+		<acpmenuitem name="wcf.acp.menu.link.dev.packagesDownload">
+			<parent>wcf.acp.menu.link.dev.catmanage</parent>
+			<link>index.php?page=DevPackagesDownload</link>
+			<showorder>1</showorder>
+		</acpmenuitem>
+	</import>
+</data>

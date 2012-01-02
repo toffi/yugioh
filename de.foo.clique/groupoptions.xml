@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/groupoptions.xsd">
+	<import>
+		<categories>
+			<category name="user.clique">
+				<parent>user</parent>
+			</category>
+			<category name="mod.clique">
+				<parent>mod</parent>
+			</category>
+			<category name="user.clique.general">
+				<parent>user.clique</parent>
+			</category>
+			<category name="user.clique.comments">
+				<parent>user.clique</parent>
+			</category>
+			<category name="mod.clique.general">
+				<parent>mod.clique</parent>
+			</category>
+		</categories>
+
+		<options>
+			<option name="mod.clique.general.canEditEveryClique">
+				<categoryname>mod.clique.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			<option name="mod.clique.general.canAdministrateEveryClique">
+				<categoryname>mod.clique.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			<option name="mod.clique.general.canDeleteEveryClique">
+				<categoryname>mod.clique.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+
+			<option name="user.clique.general.canSee">
+				<categoryname>user.clique.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<enableoptions>user.clique.general.canRaise</enableoptions>
+			</option>
+			<option name="user.clique.general.canRaise">
+				<categoryname>user.clique.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="user.clique.general.maxWidth">
+				<categoryname>user.clique.general</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>150</defaultvalue>
+			</option>
+			<option name="user.clique.general.maxHeight">
+				<categoryname>user.clique.general</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>150</defaultvalue>
+			</option>
+			<option name="user.clique.general.maxSize">
+				<categoryname>user.clique.general</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>40000</defaultvalue>
+			</option>
+			<option name="user.clique.general.allowedFileExtensions">
+				<categoryname>user.clique.general</categoryname>
+				<optiontype>textarea</optiontype>
+				<defaultvalue><![CDATA[gif
+jpg
+jpeg
+png]]></defaultvalue>
+			</option>
+
+			<option name="user.clique.comments.canMakeComment">
+				<categoryname>user.clique.comments</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<enableoptions>user.clique.comments.canEditOwnComments,user.clique.comments.canDeleteOwnComments</enableoptions>
+			</option>
+			<option name="user.clique.comments.canEditOwnComments">
+				<categoryname>user.clique.comments</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="user.clique.comments.canDeleteOwnComments">
+				<categoryname>user.clique.comments</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+		</options>
+	</import>
+</data>

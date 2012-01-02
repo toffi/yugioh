@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/guthabenmainpage.xsd">
+	<import>
+		<userguthabenmainpage name="wcf.guthaben.mainpage.avatar">
+			<icon>avatarL.png</icon>
+			<link>form=AvatarEdit</link>
+			<description>wcf.guthaben.mainpage.avatar.description</description>
+			<parent>shopPage</parent>
+			<permissions>user.profile.avatar.canUploadAvatar</permissions>
+		</userguthabenmainpage>
+
+		<userguthabenmainpage name="wcf.guthaben.mainpage.avatarflat">
+			<icon>avatarCategoryL.png</icon>
+			<link>action=AvatarFlat</link>
+			<description>wcf.guthaben.mainpage.avatarflat.description</description>
+			<parent>shopPage</parent>
+			<permissions>user.profile.avatar.canUploadAvatar</permissions>
+		</userguthabenmainpage>
+	</import>
+</data>

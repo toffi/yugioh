@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/acpmenu.xsd">
+	<import>
+		<acpmenuitem name="wcf.acp.menu.link.user.clique">
+			<parent>wcf.acp.menu.link.user</parent>
+			<options></options>
+		</acpmenuitem>
+		
+		<acpmenuitem name="wcf.acp.menu.link.user.clique.category">
+			<icon></icon>
+			<parent>wcf.acp.menu.link.user.clique</parent>
+			<link>index.php?form=CliqueCategoryAdd</link>
+			<showorder>1</showorder>
+			<permissions></permissions>
+		</acpmenuitem>
+
+		<acpmenuitem name="wcf.acp.menu.link.user.clique.category.list">
+			<icon></icon>
+			<parent>wcf.acp.menu.link.user.clique</parent>
+			<link>index.php?page=CliqueCategoryList</link>
+			<showorder>2</showorder>
+			<permissions></permissions>
+		</acpmenuitem>
+	</import>
+</data>

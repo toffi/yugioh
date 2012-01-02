@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<package name="de.foo.clique" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/package.xsd">
+	<packageinformation>
+		<packagename><![CDATA[Themenbezogene Benutzergruppen (Cliquen)]]></packagename>
+		<packagedescription><![CDATA[Mit den Cliquen können themenbezogene Benutzergruppen (Cliquen) erstellt werden. In diesen Gruppen kann sich dann, über verschiedene Wege der Kommunikation, ausgetauscht werden.]]></packagedescription>
+		<standalone>0</standalone>
+		<isunique>1</isunique>
+		<version>1.0.5 RC 11</version>
+		<date>2011-04-07</date>
+		<plugin>com.woltlab.wcf</plugin>
+		<packageurl><![CDATA[http://technex.org]]></packageurl>
+	</packageinformation>
+
+	<authorInformation>
+		<author><![CDATA[$foo, techNex]]></author>
+		<authorurl><![CDATA[http://technex.org]]></authorurl>
+	</authorInformation>
+
+	<requiredpackages>
+		<requiredpackage minversion="1.1.2">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="1.0.1" file="requirements/com.woltlab.community.htmlutility.tar.gz">com.woltlab.community.htmlutility</requiredpackage>
+	</requiredpackages>
+
+	<instructions type="install">
+		<languages languagecode="de">de.xml</languages>
+        <languages languagecode="en">en.xml</languages>
+		<sql>install.sql</sql>
+		<files>files/files.tar</files>
+		<templates>templates/templates.tar</templates>
+		<usercpmenu>usercpmenu.xml</usercpmenu>
+		<pagemenu>pagemenu.xml</pagemenu>
+		<eventlistener>eventlistener.xml</eventlistener>
+		<options>options.xml</options>
+		<acpmenu>acpmenu.xml</acpmenu>
+		<acptemplates>acptemplates/acptemplates.tar</acptemplates>
+		<groupoptions>groupoptions.xml</groupoptions>
+		<packageinstallationplugins>pip/pip.tar</packageinstallationplugins>
+		<cliquemenuitem>cliquemenuitem.xml</cliquemenuitem>
+		<searchablemessagetypes>smt.xml</searchablemessagetypes>
+		<pagelocation>pagelocation.xml</pagelocation>
+        <useroptions>useroptions.xml</useroptions>
+	</instructions>
+
+    <instructions type="update" fromversion="1.0.5 RC 10">
+        <languages languagecode="de">de.xml</languages>
+		<languages languagecode="en">en.xml</languages>
+	</instructions>
+</package>

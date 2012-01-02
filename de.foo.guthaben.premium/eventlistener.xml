@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE import SYSTEM "DTD/import.dtd">
+<data>	
+	<import>
+		<eventlistener>
+			<eventClassName>GuthabenMainPage</eventClassName>
+			<eventName>readData</eventName>
+			<listenerClassFile>lib/system/event/listener/GuthabenPremiumRedirectListener.class.php</listenerClassFile>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname>GroupAddForm</eventclassname>
+			<eventname>readFormParameters</eventname>
+			<listenerclassfile>lib/system/event/listener/GuthabenPremiumListener.class.php</listenerclassfile>
+			<environment>admin</environment>
+			<inherit>1</inherit>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname>GroupAddForm</eventclassname>
+			<eventname>save</eventname>
+			<listenerclassfile>lib/system/event/listener/GuthabenPremiumListener.class.php</listenerclassfile>
+			<environment>admin</environment>
+			<inherit>1</inherit>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname>GroupAddForm</eventclassname>
+			<eventname>assignVariables</eventname>
+			<listenerclassfile>lib/system/event/listener/GuthabenPremiumListener.class.php</listenerclassfile>
+			<environment>admin</environment>
+			<inherit>1</inherit>
+		</eventlistener>
+	</import>
+</data>

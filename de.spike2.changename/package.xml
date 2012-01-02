@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="de.spike2.changename" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/package.xsd">
+	<packageInformation>
+		<packagename><![CDATA[Guthaben Change Username]]></packagename>
+		<packagedescription><![CDATA[Durch dieses Plugin werden Benutzernamenwechsel kostenpflichtig]]></packagedescription>
+		<standalone>0</standalone>
+		<isunique>1</isunique>
+		<version>1.0.3</version>
+		<date>2008-08-14</date>
+		<plugin>com.toby.wcf.guthaben</plugin>
+		<packageurl><![CDATA[http://gnex.org]]></packageurl>
+	</packageInformation>
+
+	<authorInformation>
+		<author>$foo, GneX</author>
+		<authorurl><![CDATA[http://gnex.org]]></authorurl>
+	</authorInformation>
+
+	<requiredPackages>
+		<requiredpackage minversion="1.1.2">com.woltlab.wcf.form.user</requiredpackage>
+		<requiredPackage minversion="0.8.6">com.toby.wcf.guthaben</requiredPackage>
+	</requiredPackages>
+
+	<optionalpackages>
+		<optionalpackage file="optionals/de.spike2.changename.info.tar">de.spike2.changename.info</optionalpackage>
+	</optionalpackages>
+
+	<instructions type="install">
+		<files>files.tar</files>
+		<options>options.xml</options>
+		<eventlistener>eventlistener.xml</eventlistener>
+		<languages languagecode="de">de.xml</languages>
+		<languages languagecode="de-informal">de-informal.xml</languages>
+		<guthabenprices>guthabenprices.xml</guthabenprices>
+		<guthabenmainpage>guthabenmainpage.xml</guthabenmainpage>
+		<useroptions>useroptions.xml</useroptions>
+	</instructions>
+
+	<instructions type="update" fromversion="1.*">
+		<files>files.tar</files>
+		<options>options.xml</options>
+		<eventlistener>eventlistener.xml</eventlistener>
+		<languages languagecode="de">de.xml</languages>
+		<languages languagecode="de-informal">de-informal.xml</languages>
+		<guthabenprices>guthabenprices.xml</guthabenprices>
+		<guthabenmainpage>guthabenmainpage.xml</guthabenmainpage>
+	</instructions>
+</package>

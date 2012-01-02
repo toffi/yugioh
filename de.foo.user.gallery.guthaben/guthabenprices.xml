@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/guthabenprices.xsd">
+	<import>
+		<guthabenprices name="wcf.guthaben.prices.galerieUpload">
+			<description>wcf.guthaben.prices.galerieUpload.description</description>
+			<price>GUTHABEN_EARN_PER_GALERIE_UPLOAD</price>
+		</guthabenprices>
+	</import>
+</data>

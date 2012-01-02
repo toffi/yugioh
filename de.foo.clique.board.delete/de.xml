@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.clique_board_deleteThreads"><![CDATA[Clanforenlöschung aktivieren]]></item>
+		<item name="wcf.acp.option.clique_board_deleteThreads.description"><![CDATA[Bei der Clanlöschung werden automatisch sämtliche Clanforen gelöscht.]]></item>
+		<item name="wcf.acp.option.clique_board_moveThreads"><![CDATA[Archiv]]></item>
+		<item name="wcf.acp.option.clique_board_moveThreads.description"><![CDATA[Geben Sie hier die Foren ID an, in welche die Themen verschoben werden sollen, wenn sich ein Clan löscht. Hiermit deaktivieren Sie die automatische Löschung der Themen.]]></item>
+	</category>
+</language>

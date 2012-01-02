@@ -33,5 +33,9 @@
 			<pattern><![CDATA[index\.php\?form=ECPTourneyDetail&.*eventID=(\d+)]]></pattern>
 			<classpath>lib/data/page/location/ECPLocation.class.php</classpath>
 		</pagelocation>
+<<<<<<< HEAD
 	</import>
+=======
+	</import
+>>>>>>> bbb65990f6f07764a9378f24986dac434ad6fb1f
 </data>

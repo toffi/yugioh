@@ -21,7 +21,11 @@
                 {assign var=arrayKey value=$i-1}
         		<input type="text" class="inputText" id="groupYears{$i}" name="groupYears[]" value="{if $groupYears.$arrayKey|isset}{$groupYears.$arrayKey}{else}0{/if}" />
         	</div>
+<<<<<<< HEAD
         	<div class="formFieldDesc" id="groupYears{$i}HelpMessage"
+=======
+        	<div class="formFieldDesc" id="groupYears{$i}HelpMessage">
+>>>>>>> bbb65990f6f07764a9378f24986dac434ad6fb1f
         		<p>{lang}wcf.acp.group.groupYears.description{/lang}</p>
         	</div>
          {/section}

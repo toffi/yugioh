@@ -33,7 +33,13 @@
         <cronjobs>cronjobs.xml</cronjobs>
 	</instructions>
 
+<<<<<<< HEAD
 	<instructions type="update" fromversion="0.0.9"
         <files>files.tar</files>
 	</instructions>
+=======
+	<instructions type="update" fromversion="0.0.9">
+        <files>files.tar</files>
+	</instructions
+>>>>>>> bbb65990f6f07764a9378f24986dac434ad6fb1f
 </package>

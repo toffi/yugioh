@@ -9,7 +9,7 @@ require_once(WCF_DIR.'lib/system/cache/CacheBuilder.class.php');
  */
 
 class CacheBuilderCliqueBoxes implements CacheBuilder {
-	public $cliquest = array();
+	public $cliques = array('newest' => array());
 	/**
 	 * @see CacheBuilder::getData()
 	 */
@@ -19,12 +19,12 @@ class CacheBuilderCliqueBoxes implements CacheBuilder {
 			LEFT JOIN   wcf".WCF_N."_user user
 			  ON (user.userID = clique.raiserID)
 			ORDER BY cliqueID DESC
-            LIMIT 5";
+			LIMIT 5";
 		$result = WCF::getDB()->sendQuery($sql);
 		while ($row = WCF::getDB()->fetchArray($result)) {
 			$this->cliques['newest'][] = $row;
 		}
-
+		
 		return $this->cliques;
 	}
 

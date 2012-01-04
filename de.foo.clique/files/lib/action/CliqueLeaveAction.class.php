@@ -50,10 +50,13 @@ class CliqueLeaveAction extends AbstractSecureAction {
 	 * @see Action::addUser()
 	 */
 	public function deleteUser($userID, $cliqueID) {
-        EventHandler::fireAction($this, 'deleteUserFromClique');
+		EventHandler::fireAction($this, 'deleteUserFromClique');
 		$delete = "DELETE FROM
 								wcf".WCF_N."_user_to_clique
 							WHERE userID=".$userID." && cliqueID = ".$cliqueID;
 		WCF::getDB()->sendQuery($delete);
+		
+		// reset cache
+		WCF::getCache()->clear(WCF_DIR.'cache/', 'cache.CacheBuilderCliqueBoxes.php');
 	}
 }

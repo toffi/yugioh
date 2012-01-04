@@ -17,17 +17,8 @@ class CliqueDetailPage extends AbstractCliqueSortablePage {
 	public $commentsPerPage = 5;
 	public $cliqueVisitors = array();
 	public $cliqueComments = array();
-    public $memberships = array();
+	public $memberships = array();
 	public $countComments = 0;
-
-	/**
-	 * @see Page::readData()
-	 */
-	public function readParameters() {
-		parent::readParameters();
-		$this->getVisitorsRating();
-		$this->handleRating();
-	}
 
 	/**
 	 * @see Page::readData()
@@ -99,12 +90,12 @@ class CliqueDetailPage extends AbstractCliqueSortablePage {
 	 * Gets a list of all memberships of the clique.
 	 */
 	public function readMemberships() {
-        $members = Clique::getCacheClique($this->cliqueID, 'members');
-        for($a = ($this->pageNo - 1) * $this->itemsPerPage; $a < $this->pageNo * $this->itemsPerPage; $a++) {
-            if(isset($this->gamers[$a])) {
-                $this->memberships[$a] = $members[$a];
-            }
-        }
+		$members = Clique::getCacheClique($this->cliqueID, 'members');
+		for($a = ($this->pageNo - 1) * $this->itemsPerPage; $a < $this->pageNo * $this->itemsPerPage; $a++) {
+			if(isset($this->gamers[$a])) {
+				$this->memberships[$a] = $members[$a];
+			}
+		}
 	}
 
 	/**
@@ -122,62 +113,6 @@ class CliqueDetailPage extends AbstractCliqueSortablePage {
 			return $this->count;
 		}
 
-	/**
-	 * Handles a rating request on this clique.
-	 */
-	public function handleRating() {
-		if (isset($_POST['rating'])) {
-			$rating = intval($_POST['rating']);
-
-			// illegal rating
-			if ($rating < 1 || $rating > 5) {
-				throw new IllegalLinkException();
-			}
-
-			// user has already rated this clique
-			// change rating
-			if (!empty($this->hasRated)) {
-				$sql = "UPDATE 	wcf".WCF_N."_clique_rating
-					SET 	rating = ".$rating."
-					WHERE 	cliqueID = ".$this->cliqueID." AND userID = ".WCF::getUser()->userID;
-				WCF::getDB()->registerShutdownUpdate($sql);
-
-				$sql = "UPDATE 	wcf".WCF_N."_clique
-					SET 	rating = (rating + ".$rating.") - ".$this->hasRated['rating']."
-					WHERE 	cliqueID = ".$this->cliqueID;
-				WCF::getDB()->registerShutdownUpdate($sql);
-
-				$this->hasRated['rating'] = $rating;
-			}
-			// insert new rating
-			else {
-				$sql = "INSERT INTO wcf".WCF_N."_clique_rating
-							(cliqueID, userID, rating)
-							VALUES		(".$this->cliqueID.",
-							".WCF::getUser()->userID.",
-							".$rating.")";
-				WCF::getDB()->registerShutdownUpdate($sql);
-
-				$sql = "UPDATE wcf".WCF_N."_clique
-					SET ratings = ratings + 1,
-						rating = rating + ".$rating."
-					WHERE cliqueID = ".$this->cliqueID;
-				WCF::getDB()->registerShutdownUpdate($sql);
-			}
-			HeaderUtil::redirect('index.php?page=CliqueDetail&cliqueID='.$this->cliqueID.SID_ARG_2ND_NOT_ENCODED);
-			exit;
-		}
-	}
-
-	/**
-	 * has the visitor rate this clique.
-	 */
-	public function getVisitorsRating() {
-		$sql = "SELECT rating
-			FROM wcf".WCF_N."_clique_rating
-			WHERE		cliqueID = ".$this->cliqueID." AND userID = ".WCF::getUser()->userID;
-		$this->hasRated = WCF::getDB()->getFirstRow($sql, Database::SQL_ASSOC);
-	}
 
 	/**
 	 * Returns the formatted message.

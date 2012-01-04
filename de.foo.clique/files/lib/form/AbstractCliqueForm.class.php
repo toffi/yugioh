@@ -12,7 +12,7 @@ require_once(WCF_DIR.'lib/data/clique/Clique.class.php');
 class AbstractCliqueForm extends AbstractForm {
 	public $cliqueID = 0;
 	public $isMember = 0;
-    public $applicationOpen = 0;
+	public $applicationOpen = 0;
  
 	/**
 	 * @see Page::readData()
@@ -20,7 +20,7 @@ class AbstractCliqueForm extends AbstractForm {
 	public function readParameters() {
 		parent::readParameters();
 		if(isset($_GET['cliqueID'])) $this->cliqueID = intval($_REQUEST['cliqueID']);
-        if(isset($_GET['application'])) $this->applicationOpen = intval($_GET['application']);
+		if(isset($_GET['application'])) $this->applicationOpen = intval($_GET['application']);
 	}
 
 	/**
@@ -33,8 +33,8 @@ class AbstractCliqueForm extends AbstractForm {
 				throw new IllegalLinkException();
 		}
 		$this->isMember = $this->clique->isMember();
-        $this->haveApplay = $this->clique->haveApplay();
-        parent::readData();
+		$this->haveApplay = $this->clique->haveApplay();
+		parent::readData();
 	}
 
 	/**
@@ -53,8 +53,8 @@ class AbstractCliqueForm extends AbstractForm {
 			'userRating' => ($this->clique->ratings != 0) ? round($this->clique->ratings / $this->clique->ratings) : 0,
 			'isMember' => $this->isMember,
 			'cliquePermissions' => new CliqueEditor($this->clique->cliqueID),
-            'haveApplay' => $this->haveApplay,
-            'applicationOpen' => $this->applicationOpen
+			'haveApplay' => $this->haveApplay,
+			'applicationOpen' => $this->applicationOpen
 		));
 	}
 }  

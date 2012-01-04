@@ -21,14 +21,14 @@ class Clique extends DatabaseObject {
 		if (!empty($sqlCondition)) {
 			$sql = "SELECT 	clique.*, user_table.username
 				FROM 	wcf".WCF_N."_clique clique
-    			LEFT JOIN 	wcf".WCF_N."_user user_table
-    				ON		(user_table.userID = clique.raiserID)
-                    ".$this->sqlJoins."
+				LEFT JOIN 	wcf".WCF_N."_user user_table
+					ON		(user_table.userID = clique.raiserID)
+					".$this->sqlJoins."
 				WHERE 	".$sqlCondition.
 					$this->sqlGroupBy;
 			$row = WCF::getDB()->getFirstRow($sql);
 		}
-        $row['description'] = self::getFormattedMessage($row['description']);
+		$row['description'] = self::getFormattedMessage($row['description']);
 		
 		// handle result set
 		parent::__construct($row);
@@ -46,8 +46,7 @@ class Clique extends DatabaseObject {
 	 * Is the current user a member
 	 */
 	public function isMember($userID = 0) {
-        if($userID == 0) $userID = WCF::getUser()->userID;
- 
+		if($userID == 0) $userID = WCF::getUser()->userID;
 		$isMember = 0;
 		$sql = "SELECT userID
 			FROM wcf".WCF_N."_user_to_clique

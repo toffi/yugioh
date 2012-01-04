@@ -5,7 +5,7 @@ require_once(WCF_DIR.'lib/page/util/menu/UserCPMenu.class.php');
 
 /**
  * @author	$foo
- * @license	>Creative Commons Namensnennung 3.0 Deutschland License
+ * @license	Creative Commons Namensnennung 3.0 Deutschland License
  * @package	de.foo.clique
  */
 class CliquePage extends SortablePage {
@@ -16,11 +16,11 @@ class CliquePage extends SortablePage {
 	public $itemsPerPage = 5;
 	public $sortableOrder = 0;
 	public $applications = array();
-    public $invites2 = array();
+	public $invites2 = array();
 	
 	/**
-	 * @see Page::readData()
-	 */
+	* @see Page::readData()
+	*/
 	public function readData() {
 		parent::readData();
 		$this->readMemberships();
@@ -29,8 +29,8 @@ class CliquePage extends SortablePage {
 	}
 	
 	/**
-	 * @see Page::assignVariables()
-	 */
+	* @see Page::assignVariables()
+	*/
 	public function assignVariables() {
 		parent::assignVariables();
 
@@ -43,8 +43,8 @@ class CliquePage extends SortablePage {
 	}
 	
 	/**
-	 * @see Page::show()
-	 */
+	* @see Page::show()
+	*/
 	public function show() {
 		// check permission
 		if (!WCF::getUser()->userID) {
@@ -58,8 +58,8 @@ class CliquePage extends SortablePage {
 	}
 	
 	/**
-	 * Gets a list of all memberships of the active user.
-	 */
+	* Gets a list of all memberships of the active user.
+	*/
 	protected function readMemberships() {
 		$sql = "SELECT		*
 			FROM		wcf".WCF_N."_clique
@@ -76,8 +76,8 @@ class CliquePage extends SortablePage {
 	}
 
 	/**
-	 * Gets a list of all memberships of the active user.
-	 */
+	* Gets a list of all memberships of the active user.
+	*/
 	protected function readApplication() {
 		$sql = "SELECT		*
 			FROM		wcf".WCF_N."_clique_application application
@@ -130,8 +130,7 @@ class CliquePage extends SortablePage {
 								LEFT JOIN 	wcf".WCF_N."_user user_table
 									ON		(user_table.userID = clique.raiserID)
 								WHERE clique.status = 0 
-                                    AND
-										clique.cliqueID NOT IN (
+									AND clique.cliqueID NOT IN (
 											SELECT	cliqueID
 											FROM wcf".WCF_N."_user_to_clique
 											WHERE userID = ".WCF::getUser()->userID."

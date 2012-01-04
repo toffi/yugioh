@@ -18,12 +18,12 @@ class CliqueDeleteAction extends AbstractSecureAction {
 		parent::readParameters();
 		if (isset($_GET['cliqueID'])) $this->cliqueID = intval($_GET['cliqueID']);
 		$this->clique = new Clique($this->cliqueID);
- 
+		
 				// Check if clique exist
 		if (!$this->clique->cliqueID) {
 				throw new IllegalLinkException();
 		}
-
+		
 		// check permission
 		if (!CliqueEditor::getCliquePermission('canDeleteClique') && !WCF::getUser()->getPermission('mod.clique.general.canEditEveryClique')) {
 			throw new PermissionDeniedException();
@@ -35,12 +35,14 @@ class CliqueDeleteAction extends AbstractSecureAction {
 	 */
 	public function execute() {
 		parent::execute();
-
+		
 		// Delete Memberships
 		$this->deleteClique($this->cliqueID, $this->clique->image);
-
+		
 		$this->executed();
-
+		
+		// reset cache
+		WCF::getCache()->clear(WCF_DIR.'cache/', 'cache.CacheBuilderCliqueBoxes.php');
 		HeaderUtil::redirect('index.php?page=Clique'.SID_ARG_2ND_NOT_ENCODED);
 		exit;
 	}
@@ -121,9 +123,9 @@ class CliqueDeleteAction extends AbstractSecureAction {
 	/**
 	 * @see Action::deletePhoto()
 	 */
-    public function deletePhoto($picture) {
-       if(file_exists(WCF_DIR.'images/clique/'.$picture)) {
-            @unlink(WCF_DIR.'images/clique/'.$picture);
-	   }
-    }
+	public function deletePhoto($picture) {
+		if(file_exists(WCF_DIR.'images/clique/'.$picture)) {
+			@unlink(WCF_DIR.'images/clique/'.$picture);
+		}
+	}
 }

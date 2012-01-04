@@ -26,7 +26,7 @@
 	</ul>
 	{if $userMessages|isset}{@$userMessages}{/if}
 
-	{include file="cliqueDetailHeader" showRaiting=true}
+	{include file="cliqueDetailHeader"}
 
 	<div class="border">
 		<div class="layout-2">

@@ -25,7 +25,7 @@ class CliqueKickUserAction extends AbstractSecureAction {
 		if (isset($_GET['userID'])) $this->userID = intval($_GET['userID']);
 
 				// Check if clique exist
-		 if (!$this->clique->cliqueID) {
+		if(!$this->clique->cliqueID) {
 			throw new IllegalLinkException();
 		}
 	}

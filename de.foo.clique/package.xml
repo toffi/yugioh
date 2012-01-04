@@ -5,7 +5,7 @@
 		<packagedescription><![CDATA[Mit den Cliquen können themenbezogene Benutzergruppen (Cliquen) erstellt werden. In diesen Gruppen kann sich dann, über verschiedene Wege der Kommunikation, ausgetauscht werden.]]></packagedescription>
 		<standalone>0</standalone>
 		<isunique>1</isunique>
-		<version>1.0.5 RC 11</version>
+		<version>1.0.5 RC 12</version>
 		<date>2011-04-07</date>
 		<plugin>com.woltlab.wcf</plugin>
 		<packageurl><![CDATA[http://technex.org]]></packageurl>
@@ -23,7 +23,7 @@
 
 	<instructions type="install">
 		<languages languagecode="de">de.xml</languages>
-        <languages languagecode="en">en.xml</languages>
+		<languages languagecode="en">en.xml</languages>
 		<sql>install.sql</sql>
 		<files>files/files.tar</files>
 		<templates>templates/templates.tar</templates>
@@ -38,11 +38,11 @@
 		<cliquemenuitem>cliquemenuitem.xml</cliquemenuitem>
 		<searchablemessagetypes>smt.xml</searchablemessagetypes>
 		<pagelocation>pagelocation.xml</pagelocation>
-        <useroptions>useroptions.xml</useroptions>
+		<useroptions>useroptions.xml</useroptions>
 	</instructions>
 
-    <instructions type="update" fromversion="1.0.5 RC 10">
-        <languages languagecode="de">de.xml</languages>
-		<languages languagecode="en">en.xml</languages>
+	<instructions type="update" fromversion="1.0.5 RC 11">
+		<files>files/files.tar</files>
+		<templates>templates/templates.tar</templates>
 	</instructions>
 </package>

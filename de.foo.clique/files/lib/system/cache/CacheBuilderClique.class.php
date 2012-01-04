@@ -15,27 +15,27 @@ class CacheBuilderClique implements CacheBuilder {
 	 */
 	public function getData($cacheResource) {
 		$data = array();
+		$data['infos'] = $data['members'] = array();
 
-        // Get eventID
-        preg_match("/\d+/", $cacheResource['cache'], $result);
-        $cliqueID = $result[0];
-        
-        // read clique
-    	$data['infos'] = new Clique($cliqueID);
-        
-        //read membership
+		// Get eventID
+		preg_match("/\d+/", $cacheResource['cache'], $result);
+		$cliqueID = $result[0];
+		
+		// read clique
+		$data['infos'] = new Clique($cliqueID);
+		
+		//read membership
 		$sql = "SELECT *
 			FROM wcf".WCF_N."_user_to_clique
 			WHERE		cliqueID = ".$cliqueID."
-            ORDER BY enteredTime DESC";
+			ORDER BY enteredTime DESC";
 		$result = WCF::getDB()->sendQuery($sql);
 		$this->countMemberships = WCF::getDB()->countRows($result);
 		while ($row = WCF::getDB()->fetchArray($result)) {
 			//if($row['userID'] == WCF::getUser()->userID) $this->isMember = 1;
 			$data['members'][] = new UserProfile($row['userID']);
 		}
-        
-		return $data;
+		
 	}
 }
 ?>

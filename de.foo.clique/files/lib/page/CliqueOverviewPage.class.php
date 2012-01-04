@@ -22,7 +22,7 @@ class CliqueOverviewPage extends SortablePage {
 	public $itemsPerPage = CLIQUE_PER_PAGE;
 	public $selectData = CLIQUE_LIST_COLUMNS;
 	public $columns = array();
-    public $newestCliques = array();
+	public $newestCliques = array();
 
 	/**
 	 * @see Page::readParameters()
@@ -32,9 +32,8 @@ class CliqueOverviewPage extends SortablePage {
 
 		WCF::getCache()->addResource('CacheBuilderCliqueBoxes', WCF_DIR.'cache/cache.CacheBuilderCliqueBoxes.php', WCF_DIR.'lib/system/cache/CacheBuilderCliqueBoxes.class.php');
 		$categoriesCache = WCF::getCache()->get('CacheBuilderCliqueBoxes');
-        $this->newestCliques = $categoriesCache['newest'];
-  
-		$cliqueColumns = explode(",", CLIQUE_LIST_COLUMNS);
+		$this->newestCliques = $categoriesCache['newest'];
+		$cliqueColumns = explode(',', CLIQUE_LIST_COLUMNS);
 
 		foreach ($cliqueColumns as $columns) {
 			$this->columns[] = $columns;
@@ -76,10 +75,10 @@ class CliqueOverviewPage extends SortablePage {
 	 */
 	public function readData() {
 		parent::readData();
-		if (empty($this->selectData)) {
+		if(empty($this->selectData)) {
 			$this->selectData = 'name';
 		}
-		if (empty($this->sortField)) {
+		if(empty($this->sortField)) {
 			$this->sortField = 'name';
 		}
 
@@ -103,8 +102,8 @@ class CliqueOverviewPage extends SortablePage {
 			'letters' => $this->letters,
 			'letter' => rawurlencode($this->letter),
 			'columns' => $this->columns,
-            'cliqueCategories' => WCF::getCache()->get('CacheBuilderCliqueCategories'),
-            'newestCliques' => $this->newestCliques
+			'cliqueCategories' => WCF::getCache()->get('CacheBuilderCliqueCategories'),
+			'newestCliques' => $this->newestCliques
 		));
 	}
 	
@@ -134,8 +133,8 @@ class CliqueOverviewPage extends SortablePage {
 		while ($row = WCF::getDB()->fetchArray($result)) {
 			if(!empty($row['cliqueID'])) {
 				if(isset($row['description'])) {
-                    $row['description'] = self::getFormattedMessage($row['description']);
-                }
+					$row['description'] = self::getFormattedMessage($row['description']);
+				}
 				$this->allCliquen[] = $row;
 			}
 		}
@@ -162,7 +161,7 @@ class CliqueOverviewPage extends SortablePage {
 	 * Gets the list of available letters.
 	 */
 	protected function loadLetters() {
-		for ($i = 0, $j = StringUtil::length(self::$defaultLetters); $i < $j; $i++) {
+		for($i = 0, $j = StringUtil::length(self::$defaultLetters); $i < $j; $i++) {
 			$this->letters[] = StringUtil::substring(self::$defaultLetters, $i, 1);
 		}
 	}

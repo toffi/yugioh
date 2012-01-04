@@ -21,9 +21,9 @@ class CliqueJoinAction extends AbstractSecureAction {
 		if (isset($_GET['cliqueID'])) $this->cliqueID = intval($_GET['cliqueID']);
 		$this->clique = new Clique($this->cliqueID);
 
-				// Check if clique exist and if clique is closed
+		// Check if clique exist and if clique is closed
 		if (!$this->clique->cliqueID || $this->clique->status == 1 || WCF::getUser()->userID == 0 || $this->clique->isMember() == 1) {
-            throw new IllegalLinkException();
+			throw new IllegalLinkException();
 		}
 	}
 
@@ -35,7 +35,7 @@ class CliqueJoinAction extends AbstractSecureAction {
 
 		// add user
 		$this->addUser(WCF::getUser()->userID, $this->cliqueID);
-        CliqueDeleteInviteAction::deleteInvite($this->cliqueID, WCF::getUser()->userID);
+		CliqueDeleteInviteAction::deleteInvite($this->cliqueID, WCF::getUser()->userID);
 		$this->executed();
 
 		HeaderUtil::redirect('index.php?page=CliqueDetail&cliqueID='.$this->cliqueID.SID_ARG_2ND_NOT_ENCODED);
@@ -46,7 +46,7 @@ class CliqueJoinAction extends AbstractSecureAction {
 	 * @see Action::addUser()
 	 */
 	public function addUser($userID, $cliqueID, $groupType = 2) {
-        EventHandler::fireAction($this, 'addUserToClique');
+		EventHandler::fireAction($this, 'addUserToClique');
 		$sql = "INSERT INTO
 							wcf".WCF_N."_user_to_clique(userID, cliqueID, enteredTime, groupType)
 						VALUES
@@ -55,5 +55,8 @@ class CliqueJoinAction extends AbstractSecureAction {
 							".TIME_NOW.",
 							".$groupType.")";
 		WCF::getDB()->sendQuery($sql);
+		
+		// reset cache
+		WCF::getCache()->clear(WCF_DIR.'cache/', 'cache.CacheBuilderCliqueBoxes.php');
 	}
 }

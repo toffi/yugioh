@@ -12,15 +12,15 @@ require_once(WCF_DIR.'lib/data/clique/Clique.class.php');
 class AbstractCliqueSortablePage extends SortablePage {
 	public $cliqueID = 0;
 	public $isMember = 0;
-    public $applicationOpen = 0;
- 
+	public $applicationOpen = 0;
+
 	/**
 	 * @see Page::readData()
 	 */
 	public function readParameters() {
 		parent::readParameters();
 		if(isset($_GET['cliqueID'])) $this->cliqueID = intval($_GET['cliqueID']);
-        if(isset($_GET['application'])) $this->applicationOpen = intval($_GET['application']);
+		if(isset($_GET['application'])) $this->applicationOpen = intval($_GET['application']);
 	}
 
 	/**
@@ -36,7 +36,7 @@ class AbstractCliqueSortablePage extends SortablePage {
 				throw new IllegalLinkException();
 		}
 		$this->isMember = $this->clique->isMember();
-        $this->haveApplay = $this->clique->haveApplay();
+		$this->haveApplay = $this->clique->haveApplay();
 	}
 
 	/**
@@ -55,8 +55,8 @@ class AbstractCliqueSortablePage extends SortablePage {
 			'userRating' => ($this->clique->ratings != 0) ? round($this->clique->rating / $this->clique->ratings) : 0,
 			'isMember' => $this->isMember,
 			'cliquePermissions' => new CliqueEditor($this->clique->cliqueID),
-            'haveApplay' => $this->haveApplay,
-            'applicationOpen' => $this->applicationOpen
+			'haveApplay' => $this->haveApplay,
+			'applicationOpen' => $this->applicationOpen
 		));
 	}
 }  

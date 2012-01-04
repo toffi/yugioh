@@ -1,40 +1,9 @@
-
-    <div class="mainHeadline">
-    	<img src="{icon}cliqueL.png{/icon}" alt="" />
-    	<div class="headlineContainer">
-    		<h2>{$clique->name}</h2>
-    			{if $showRaiting|isset && 'RELATIVE_WBB_DIR'|defined}
-    				<script type="text/javascript" src="{@RELATIVE_WBB_DIR}js/Rating.class.js"></script>
-    				<form method="post" action="index.php?page=CliqueDetail&amp;cliqueID={$clique->cliqueID}">
-    					<div id="cliqueRaiting">
-    						<input type="hidden" name="cliqueID" value="{$clique->cliqueID}" />
-    						{@SID_INPUT_TAG}
-    						<input type="hidden" id="cliqueID" name="rating" value="0" />
-    						<span>{lang}wcf.clique.detail.raiting{/lang}:</span>
-    						<span class="hidden" id="cliqueIDSpan"></span>
-    						<noscript>
-    							<div>
-    								<select id="cliqueRatingSelect" name="rating">
-    									<option value="1"{if $userRating == 1} selected="selected"{/if}>1</option>
-    									<option value="2"{if $userRating == 2} selected="selected"{/if}>2</option>
-    									<option value="3"{if $userRating == 3} selected="selected"{/if}>3</option>
-    									<option value="4"{if $userRating == 4} selected="selected"{/if}>4</option>
-    									<option value="5"{if $userRating == 5} selected="selected"{/if}>5</option>
-    								</select>
-    								<input type="image" class="inputImage" src="{icon}submitS.png{/icon}" alt="{lang}wcf.global.button.submit{/lang}" />
-    							</div>
-    						</noscript>
-    					</div>
-    				</form>
-    
-    				<script type="text/javascript">
-    					//<![CDATA[
-    					new Rating('cliqueID', {$userRating|intval});
-    					//]]>
-    				</script>
-    			{/if}
-    	</div>
-    </div>
+<div class="mainHeadline">
+	<img src="{icon}cliqueL.png{/icon}" alt="" />
+	<div class="headlineContainer">
+		<h2>{$clique->name}</h2>
+	</div>
+</div>
 
 
 <div id="userCard" class="border">

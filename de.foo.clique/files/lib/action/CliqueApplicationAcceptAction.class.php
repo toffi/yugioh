@@ -24,7 +24,7 @@ class CliqueApplicationAcceptAction extends AbstractSecureAction {
 
 				// Check if clique exist and if clique is closed
 		if (!$this->clique->cliqueID || WCF::getUser()->userID == 0 || $this->clique->isMember($this->userID) == 1) {
-            throw new IllegalLinkException();
+			throw new IllegalLinkException();
 		}
 
 	}

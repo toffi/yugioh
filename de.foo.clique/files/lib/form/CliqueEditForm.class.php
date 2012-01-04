@@ -38,7 +38,7 @@ class CliqueEditForm extends CliqueAddForm {
 	 * @see Form::save()
 	 */
 	public function save(){
-        AbstractForm::save();
+		AbstractForm::save();
 
 			// Update
 		$sql = "UPDATE wcf".WCF_N."_clique
@@ -50,9 +50,12 @@ class CliqueEditForm extends CliqueAddForm {
 								".$this->photoSql."
 						WHERE cliqueID = ".$this->cliqueID;
 		WCF::getDB()->sendQuery($sql);
-
+		
 		$this->saved();
-
+		
+		// reset cache
+		WCF::getCache()->clear(WCF_DIR.'cache/', 'cache.CacheBuilderCliqueBoxes.php');
+		
 			// Redirect
 		WCF::getTPL()->assign(array(
 			'url' => 'index.php?form=CliqueEdit&cliqueID='.$this->cliqueID.SID_ARG_2ND,

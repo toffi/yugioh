@@ -39,7 +39,7 @@ class CliqueCommentsPage extends AbstractCliqueSortablePage {
 
 		// mark Comments as active and get menu items
 		require_once(WCF_DIR.'lib/data/clique/CliqueMenuItems.class.php');
-        CliqueMenuItems::setActiveMenuItem('wcf.clique.comment');
+		CliqueMenuItems::setActiveMenuItem('wcf.clique.comment');
 
 		WCF::getTPL()->assign(array(
 			'comments' => $this->comments
@@ -74,9 +74,9 @@ class CliqueCommentsPage extends AbstractCliqueSortablePage {
 
 		while ($row = WCF::getDB()->fetchArray($result)) {
 			$row['message'] = self::getFormattedMessage($row['message']);
-            if($removeBreaks == 1) {
-                $row['message'] = str_replace('<br />', '', $row['message']);
-            }
+			if($removeBreaks == 1) {
+				$row['message'] = str_replace('<br />', '', $row['message']);
+			}
 			$comments[] = new UserProfile(null, $row);
 		}
 

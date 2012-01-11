@@ -15,7 +15,7 @@ class CacheBuilderClique implements CacheBuilder {
 	 */
 	public function getData($cacheResource) {
 		$data = array();
-		$data['infos'] = $data['members'] = array();
+		$data['infos'] = $data['members'] = $data['permission'] = array();
 
 		// Get eventID
 		preg_match("/\d+/", $cacheResource['cache'], $result);
@@ -33,9 +33,17 @@ class CacheBuilderClique implements CacheBuilder {
 		$this->countMemberships = WCF::getDB()->countRows($result);
 		while ($row = WCF::getDB()->fetchArray($result)) {
 			//if($row['userID'] == WCF::getUser()->userID) $this->isMember = 1;
-			$data['members'][] = new UserProfile($row['userID']);
+			$data['members'][$row['userID']] = array('user' => new UserProfile($row['userID']),
+										'groupType' => $row['groupType']);
 		}
 		
+		//read permissions
+		$sql = "SELECT permission.*
+			FROM wcf".WCF_N."_clique_group_rights permission
+			WHERE permission.cliqueID =".$cliqueID;
+		$data['permission'] = WCF::getDB()->getFirstRow($sql, Database::SQL_ASSOC);
+		
+		return $data;
 	}
 }
 ?>

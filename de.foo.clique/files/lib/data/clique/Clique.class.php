@@ -92,5 +92,22 @@ class Clique extends DatabaseObject {
 		WCF::getCache()->addResource('cacheBuilderClique'.$cliqueID.'-'.PACKAGE_ID, WCF_DIR.'cache/cache.cacheBuilderClique'.$cliqueID.'-'.PACKAGE_ID.'.php', WCF_DIR.'lib/system/cache/CacheBuilderClique.class.php');
 		return WCF::getCache()->get('cacheBuilderClique'.$cliqueID.'-'.PACKAGE_ID, $key);
 	}
+
+
+	/**
+	 * Return the league cache.
+	 */
+	public static function resetCacheCliqueInvites() {
+		// reset cache
+		WCF::getCache()->clear(WCF_DIR.'cache/', 'cache.cacheBuilderCliqueInvites-'.PACKAGE_ID.'.php');
+	}
+
+	/**
+	 * Resets the league cache.
+	 */
+	public static function getCacheCliqueInvites() {
+		WCF::getCache()->addResource('cacheBuilderCliqueInvites-'.PACKAGE_ID, WCF_DIR.'cache/cache.cacheBuilderCliqueInvites-'.PACKAGE_ID.'.php', WCF_DIR.'lib/system/cache/CacheBuilderCliqueInvites.class.php');
+		return WCF::getCache()->get('cacheBuilderCliqueInvites-'.PACKAGE_ID);
+	}
 }
 ?>

@@ -33,12 +33,12 @@ class CliqueInviteProfileAction extends AbstractSecureAction {
 	 */
 	public function execute() {
 		parent::execute();
-        require_once(WCF_DIR.'lib/form/CliqueAdministrateForm.class.php');
+		require_once(WCF_DIR.'lib/form/CliqueAdministrateForm.class.php');
 		CliqueAdministrateForm::setInvite($this->cliqueID, WCF::getUser()->userID, $this->userID);
-
-
+		
 		$this->executed();
-
+		Clique::resetCacheCliqueInvites();
+		
 		HeaderUtil::redirect('index.php?page=User&userID='.$this->userID.SID_ARG_2ND_NOT_ENCODED);
 		exit;
 	}

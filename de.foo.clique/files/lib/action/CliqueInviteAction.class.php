@@ -25,11 +25,11 @@ class CliqueInviteAction extends AbstractSecureAction {
 
 		$this->clique = new Clique($this->cliqueID);
 
-				// Check if clique exist
+		// Check if clique exist
 		if (!$this->clique->cliqueID) {
 				throw new IllegalLinkException();
 		}
-				// Check if user hasn't an invite
+		// Check if user hasn't an invite
 		if($this->clique->status == 1) {
 			$sql = "SELECT cliqueID
 							FROM wcf".WCF_N."_clique_invite
@@ -55,8 +55,8 @@ class CliqueInviteAction extends AbstractSecureAction {
 
 		self::declineUser(WCF::getUser()->userID, $this->cliqueID);
 
-
 		$this->executed();
+		Clique::resetCacheCliqueInvites();
 
 		HeaderUtil::redirect('index.php?page=Clique'.SID_ARG_2ND_NOT_ENCODED);
 		exit;

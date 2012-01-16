@@ -34,7 +34,7 @@ class UserChangeUserTitleFormGuthabenListener implements EventListener {
 			break;
 
 			case 'save':
-				if (!empty($this->titel) && isset($_POST['userTitle']) && $this->titel != htmlspecialchars($_POST['userTitle'])) {
+				if (!empty($this->titel) && isset($_POST['userTitle']) && !empty($_POST['userTitle']) && $this->titel != htmlspecialchars($_POST['userTitle'])) {
 					if (GUTHABEN_PAY_PER_USERTITLE != 0) {
 						Guthaben::sub(GUTHABEN_PAY_PER_USERTITLE, 'wcf.guthaben.log.userTitle');
 					}

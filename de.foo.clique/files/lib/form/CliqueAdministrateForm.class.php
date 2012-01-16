@@ -268,7 +268,9 @@ class CliqueAdministrateForm extends AbstractCliqueForm {
         }
 
 		$this->saved();
-
+		
+		Clique::resetCacheClique($this->cliqueID);
+		
 			// Redirect
 		WCF::getTPL()->assign(array(
 			'url' => 'index.php?form=CliqueAdministrate&cliqueID='.$this->cliqueID.SID_ARG_2ND,

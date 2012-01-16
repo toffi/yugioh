@@ -48,7 +48,7 @@ class CliqueDetailPage extends AbstractCliqueSortablePage {
 
 		WCF::getTPL()->assign(array(
 			'memberships' => $this->memberships,
-			'countMemberships' => $this->count,
+			'countMemberships' => Clique::getCacheClique($this->cliqueID, 'members'),
 			'cliqueVisitors' => $this->cliqueVisitors,
 			'cliqueComments' => $this->cliqueComments,
 			'countComments' => $this->countComments,
@@ -91,10 +91,11 @@ class CliqueDetailPage extends AbstractCliqueSortablePage {
 	 */
 	public function readMemberships() {
 		$members = Clique::getCacheClique($this->cliqueID, 'members');
-		for($a = ($this->pageNo - 1) * $this->itemsPerPage; $a < $this->pageNo * $this->itemsPerPage; $a++) {
-			if(isset($this->gamers[$a])) {
-				$this->memberships[$a] = $members[$a];
-			}
+		$a = 0;
+		foreach($members as $userID => $member) {
+			$this->memberships[$userID] = $member['user'];
+			$a++;
+			if($a == 5) break;
 		}
 	}
 
@@ -103,14 +104,6 @@ class CliqueDetailPage extends AbstractCliqueSortablePage {
 	*/
 		public function countItems() {
 			parent::countItems();
-
-			$sql = "SELECT *
-							FROM wcf".WCF_N."_user_to_clique
-							WHERE cliqueID = ".$this->cliqueID;
-			$result = WCF::getDB()->sendQuery($sql);
-			$this->count = WCF::getDB()->countRows($result);
-
-			return $this->count;
 		}
 
 

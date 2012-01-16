@@ -46,14 +46,16 @@ class Clique extends DatabaseObject {
 	 * Is the current user a member
 	 */
 	public function isMember($userID = 0) {
+		$members = Clique::getCacheClique($this->cliqueID, 'members');				
 		if($userID == 0) $userID = WCF::getUser()->userID;
-		$isMember = 0;
-		$sql = "SELECT userID
-			FROM wcf".WCF_N."_user_to_clique
-			WHERE		cliqueID = ".$this->cliqueID."
-				AND userID=".$userID;
-		$result = WCF::getDB()->getFirstRow($sql, Database::SQL_ASSOC);
-		if(!empty($result)) $isMember = 1;
+				
+		if(isset($members[$userID])) {
+					
+		}
+		else {
+			return 0;
+			
+		}return 1;
 		return $isMember;
 	}
 

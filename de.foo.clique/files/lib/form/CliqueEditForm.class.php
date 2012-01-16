@@ -55,6 +55,7 @@ class CliqueEditForm extends CliqueAddForm {
 		
 		// reset cache
 		WCF::getCache()->clear(WCF_DIR.'cache/', 'cache.CacheBuilderCliqueBoxes.php');
+		Clique::resetCacheClique($this->cliqueID);
 		
 			// Redirect
 		WCF::getTPL()->assign(array(

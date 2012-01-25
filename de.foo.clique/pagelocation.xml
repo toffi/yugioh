@@ -37,5 +37,9 @@
 			<pattern><![CDATA[index\.php\?form=CliqueEditComment&.*cliqueID=(\d+)]]></pattern>
 			<classpath>lib/data/page/location/CliqueLocation.class.php</classpath>
 		</pagelocation>
+		<pagelocation name="wcf.usersOnline.location.cliqueMembers">
+			<pattern><![CDATA[index\.php\?page=CliqueMembers&.*cliqueID=(\d+)]]></pattern>
+			<classpath>lib/data/page/location/CliqueLocation.class.php</classpath>
+		</pagelocation>
 	</import>
 </data>

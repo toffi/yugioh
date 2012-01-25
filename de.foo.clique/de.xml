@@ -311,7 +311,7 @@
 		<item name="wcf.acp.clique.categorie.delete"><![CDATA[Kategorie löschen]]></item>
 		<item name="wcf.acp.clique.categorie.delete.success"><![CDATA[Die Clan-Kategorie wurde erfolgreich gelöscht.]]></item>
 		<item name="wcf.acp.clique.categorie.delete.sure"><![CDATA[Wollen Sie diese Clan-Kategorie wirklich löschen?]]></item>
-        <item name="wcf.acp.clique.categorie.show"><![CDATA[Kategorien auflisten]]></item>
+		<item name="wcf.acp.clique.categorie.show"><![CDATA[Kategorien auflisten]]></item>
 		<item name="wcf.acp.clique.categorie.general"><![CDATA[Allgemein]]></item>
 		<item name="wcf.acp.clique.categorie.showorder"><![CDATA[Reihenfolge]]></item>
 		<item name="wcf.acp.clique.categorie.showorder.description"><![CDATA[Geben Sie hier eine Ordnungsnummer an. Diese Nummer gibt an, wie die Clan-Kategorie in Bezug auf andere Clan-Kategorien sortiert werden soll.]]></item>
@@ -330,5 +330,6 @@
 		<item name="wcf.usersOnline.location.cliqueComments"><![CDATA[Kommentare: {$clique}]]></item>
 		<item name="wcf.usersOnline.location.cliqueAddComment"><![CDATA[Erstellt einen neuen Kommentar zum Clan {$clique}]]></item>
 		<item name="wcf.usersOnline.location.cliqueEditComment"><![CDATA[Bearbeitet einen neuen Kommentar zum Clan {$clique}]]></item>
+		<item name="wcf.usersOnline.location.cliqueMembers"><![CDATA[Mitgliederliste: {$clique}]]></item>
 	</category>
 </language>

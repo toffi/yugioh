@@ -311,7 +311,7 @@
 		<item name="wcf.acp.clique.categorie.delete"><![CDATA[Delete category]]></item>
 		<item name="wcf.acp.clique.categorie.delete.success"><![CDATA[The clan category has been deleted successfully.]]></item>
 		<item name="wcf.acp.clique.categorie.delete.sure"><![CDATA[Do you really want to delete this clan category?]]></item>
-        <item name="wcf.acp.clique.categorie.show"><![CDATA[List categories]]></item>
+		<item name="wcf.acp.clique.categorie.show"><![CDATA[List categories]]></item>
 		<item name="wcf.acp.clique.categorie.general"><![CDATA[General]]></item>
 		<item name="wcf.acp.clique.categorie.showorder"><![CDATA[Order]]></item>
 		<item name="wcf.acp.clique.categorie.showorder.description"><![CDATA[Please enter an indenture number. This number indicates, in which way the clan category gets ordered in relation to other clan categories.]]></item>
@@ -330,5 +330,6 @@
 		<item name="wcf.usersOnline.location.cliqueComments"><![CDATA[Comments: {$clique}]]></item>
 		<item name="wcf.usersOnline.location.cliqueAddComment"><![CDATA[Posts a new comment to the clan {$clique}]]></item>
 		<item name="wcf.usersOnline.location.cliqueEditComment"><![CDATA[Edits a new comment of the clan {$clique}]]></item>
+		<item name="wcf.usersOnline.location.cliqueMembers"><![CDATA[Memberlist: {$clique}]]></item>
 	</category>
 </language>
